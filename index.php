@@ -94,7 +94,7 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="services.html" data-text="service">Services</a>
+                    <a class="nav-link" href="services.php" data-text="service">Services</a>
 
                 </li>
 
@@ -106,13 +106,13 @@
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="aboutus.html" data-text="about us">About us</a>
+                    <a class="nav-link" href="aboutus.php" data-text="about us">About us</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                    <a class="nav-link" href="careers.html" data-text="careers">Careers</a>
+                    <a class="nav-link" href="careers.php" data-text="careers">Careers</a>
 
                 </li>
 
