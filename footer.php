@@ -53,10 +53,10 @@
           <a href="index.html"><img src="img/logo.png" alt="Logo" class="footer-logo me-3"></a>
         </div>
         <div class="d-flex align-items-center">
-          <a href="https://www.facebook.com/" class="mx-2"><img src="img/face.svg" alt="Facebook" style="width: 45px;"></a>
-          <a href="https://x.com/" class="mx-2"><img src="img/x.svg" alt="X" style="width: 45px;"></a>
-          <a href="https://www.instagram.com/" class="mx-2"><img src="img/insta.svg" alt="Instagram" style="width: 45px;"></a>
-          <a href="https://www.tiktok.com/" class="mx-2"><img src="img/tiktok.svg" alt="TikTok" style="width: 45px;"></a>
+          <a href="https://www.facebook.com/" class="mx-2" target="_blank"><img src="img/face.svg" alt="Facebook" style="width: 45px;"></a>
+          <a href="https://x.com/" class="mx-2" target="_blank"><img src="img/x.svg" alt="X" style="width: 45px;"></a>
+          <a href="https://www.instagram.com/" class="mx-2" target="_blank"><img src="img/insta.svg" alt="Instagram" style="width: 45px;"></a>
+          <a href="https://www.tiktok.com/" class="mx-2" target="_blank"><img src="img/tiktok.svg" alt="TikTok" style="width: 45px;"></a>
         </div>
       </div>
       <br><br>

@@ -19,7 +19,7 @@
 </div>
 
 <div class="main">
-    <video autoplay muted loop>
+    <video autoplay muted loop disablePictureInPicture>
         <source src="img/gradient.webm" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -28,7 +28,7 @@
 
 
 <div class="hero">
-    <video autoplay muted loop>
+    <video autoplay muted loop disablePictureInPicture>
         <source src="img/hero.webm" type="video/mp4">
         Your browser does not support the video tag.
     </video>

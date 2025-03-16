@@ -28,12 +28,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="services.php" data-text="service">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.php" data-text="contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="aboutus.php" data-text="about us">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="careers.php" data-text="careers">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services" data-text="service">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact" data-text="contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/aboutus" data-text="about us">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/careers" data-text="careers">Careers</a></li>
                     </ul>
-                    <a href="hirenow.php"><button class="schedule">Hire Now</button></a>
+                    <a href="/hirenow"><button class="schedule">Hire Now</button></a>
                 </div>
             </div>
         </nav>    
