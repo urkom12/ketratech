@@ -12,7 +12,7 @@ error_reporting(E_ALL);
 
 
 
-$conn = mysqli_connect("localhost", "Ketra", "ketratechmyteam", "KetraTech");
+$conn = mysqli_connect("localhost", "root", "", "KetraTech");
 
 
 
@@ -260,7 +260,7 @@ mysqli_close($conn);
 
                             <label for="businessEmail" class="form-label">Business Email</label>
 
-                            <input type="email" class="form-control" id="businessEmail" name="businessEmail" required>
+                            <input type="email" class="form-control" id="businessEmail" name="businessEmail" required style="border: none;">
 
                             <div class="invalid-feedback">Business Email is required</div>
 

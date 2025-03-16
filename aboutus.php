@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Ketra Tech</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
+<?php include_once('header.php')?>
 
   <div class="loader loader--active">
 
@@ -50,10 +30,6 @@
 
   </div>
 
-
-
-
-
   <div class="main">   
 
     <video autoplay muted loop>
@@ -65,64 +41,6 @@
    </video>
 
  </div>
-
-
-
-
-
- <nav class="navbar navbar-expand-lg">
-
-  <div class="container">
-
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon"></span>
-
-      </button>      
-
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-
-          <ul class="navbar-nav mx-auto">
-
-              <li class="nav-item">
-
-                  <a class="nav-link" href="services.php" data-text="service">Services</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" href="contact.php" data-text="contact">Contact</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" href="aboutus.php" data-text="about us">About us</a>
-
-              </li>
-
-              <li class="nav-item">
-
-                  <a class="nav-link" href="careers.php" data-text="careers">Careers</a>
-
-              </li>
-
-          </ul>
-
-          <a href="hirenow.php"><button class="schedule">Hire Now</button></a>
-
-      </div>
-
-  </div>
-
-</nav>
-
-
-
-
 
   <section class="team-section-about">
 
@@ -455,13 +373,6 @@
     </div>
 
   </section>
-
-
-
-
-
-
-
     <section class="centered-section">
 
       <h1>Behind every great project is <br><span>a truly dedicated team</span></h1>
@@ -471,192 +382,4 @@
       <a href="index.html"><button class="btn btn-schedule">See our work</button></a>
 
     </section>
-    <?php include 'footer.php'; ?>
-  <script>
-
-    function checkVisibility() {
-
-        const boxes = document.querySelectorAll('.box');
-
-        const windowHeight = window.innerHeight;
-
-    
-
-        boxes.forEach((box, index) => {
-
-            const boxTop = box.getBoundingClientRect().top;
-
-    
-
-            if (boxTop <= windowHeight * 0.8) { 
-
-                setTimeout(() => {
-
-                    box.classList.add('visible');
-
-                }, index * 200); 
-
-            }
-
-        });
-
-    }
-
-    
-
-    window.addEventListener('scroll', checkVisibility);
-
-    
-
-    checkVisibility();
-
-    </script>
-
-
-
-
-
-
-
-<script>
-
-  let lastScrollY = window.scrollY;
-
-  const navbar = document.querySelector('.navbar');
-
-
-
-  window.addEventListener('scroll', () => {
-
-    if (window.scrollY > lastScrollY) {
-
-      navbar.classList.add('hide');
-
-      navbar.classList.remove('show');
-
-    } else {
-
-      navbar.classList.add('show');
-
-      navbar.classList.remove('hide');
-
-    }
-
-    lastScrollY = window.scrollY;
-
-  });
-
-</script>
-
-
-
-
-
-
-
-<script>
-
-  let aTag = document.querySelectorAll("ul li a");
-
-
-
-  aTag.forEach((element) => {
-
-    let randomCar = "!@#$%^&*()_+-<>?";
-
-    let originalText = element.dataset.text;
-
-
-
-    if (!originalText) {
-
-      console.warn("Missing data-text attribute on:", element);
-
-      return;
-
-    }
-
-
-
-    element.addEventListener("mouseover", () => {
-
-      let iteration = 0;
-
-      let interval = setInterval(() => {
-
-        element.textContent = originalText
-
-          .split("")
-
-          .map((char, index) => {
-
-            if (index < iteration) return char;
-
-            return randomCar.charAt(Math.floor(Math.random() * randomCar.length));
-
-          })
-
-          .join("");
-
-
-
-        if (iteration >= originalText.length) {
-
-          clearInterval(interval);
-
-        }
-
-        iteration++;
-
-      }, 100);
-
-    });
-
-  });
-
-</script>
-
-
-
-
-
-<script>
-
-  var loader = document.querySelector('.loader');
-
-
-
-  window.onload = function() {
-
-    loader.classList.remove('loader--active');
-
-  };
-
-
-
-  document.querySelector('.nav-link').addEventListener('click', function () {
-
-    loader.classList.add('loader--active');
-
-
-
-    window.setTimeout(function () {
-
-      loader.classList.remove('loader--active');
-
-    }, 5000);
-
-  });
-
-</script>
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
-
+<?php include 'footer.php'; ?>
