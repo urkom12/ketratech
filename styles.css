@@ -2540,3 +2540,195 @@ input[type="email"]:focus {
   font-size: 18px;
   color: #999;
 }
+
+.footer-section {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+
+
+.footer-section h2 {
+
+  font-size: 2.827rem;
+
+  color: #ffffff;
+
+}
+
+
+
+.footer-section h5 {
+
+  font-size: 1rem;
+
+  color: #ffffff;
+
+}
+
+
+
+.footer-section .divider {
+
+  border-color: #FFFFFF;
+
+  border: 2px solid #FFFFFF;
+
+  margin-bottom: 5rem;
+
+}
+
+
+
+.footer-section .form-check-label {
+
+  color: #cfcfcf;
+
+  font-size: 0.875rem;
+
+}
+
+
+
+.footer-section input ::placeholder{
+
+  background-color: white !important;
+
+  color: black;
+
+}
+
+
+
+.footer-section .btn-primary {
+
+  background-color: #6a33ff;
+
+  color: #FFFFFF;
+
+  border: none;
+
+  padding: 10px 20px;
+
+}
+
+
+
+.footer-section .btn-primary:hover {
+
+  background-color: #5a29e6;
+
+}
+
+
+
+.footer-section li{
+
+  font-size: 18px;
+
+}
+
+
+
+.footer-section a {
+
+  color: #cfcfcf;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  text-transform: capitalize;
+
+}
+
+
+
+.footer-section a:hover {
+
+  color: #ffffff;
+
+}
+
+
+
+.footer-form-control{
+
+  color: black;
+
+  background-color: white;
+
+}
+
+
+
+.footer-logo {
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* Stilovi za mobilne uređaje */
+
+@media (max-width: 768px) {
+
+  .footer-section .row {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .footer-section .col-lg-3 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+  }
+
+
+
+  .footer-links {
+
+    flex: 1;
+
+    text-align: center;
+
+  }
+
+
+
+  .footer-links ul {
+
+    padding: 0;
+
+    font-size: 0.7rem;
+
+  }
+
+  .footer-links a {
+
+    font-size: 0.7rem;
+
+  }
+
+  .footer-links .text-muted{
+
+    font-size: 0.7rem;
+
+  }
+
+  .footer-links h5{
+
+    font-size: 0.7rem
+
+  }
+
+}
