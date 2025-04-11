@@ -2,7 +2,7 @@
     <div class="container">
     <div class="text-center mb-5">
         <h2 class="mb-3">Elevate your UX today!<br>Schedule a call and make a difference!</h2>
-        <a href="hirenow.php"><button class="btn btn-primary">Hire Now</button></a>
+        <a href="/hirenow"><button class="btn btn-primary">Hire Now</button></a>
     </div>
     <hr class="divider">
     <div class="row">
@@ -15,16 +15,16 @@
             By checking the box, I agree to and accept the Privacy Policy and Terms of Service.
             </label>
         </div>
-        <a href="hirenow.php"><button class="btn btn-primary">Get updates</button></a>
+        <a href="/hirenow"><button class="btn btn-primary">Get updates</button></a>
         </div>
         <div class="col-md-3 mb-4">
         <h4>COMPANY</h4>
         <br>
         <ul class="list-unstyled">
-            <li><a href="aboutus.html" class="text-muted">About us</a></li>
-            <li><a href="contact.php" class="text-muted">Clients</a></li>
-            <li><a href="services.html" class="text-muted">Pricing</a></li>
-            <li><a href="careers.html" class="text-muted">Careers</a></li>
+            <li><a href="/aboutus" class="text-muted">About us</a></li>
+            <li><a href="/contact" class="text-muted">Clients</a></li>
+            <li><a href="/services" class="text-muted">Pricing</a></li>
+            <li><a href="/careers" class="text-muted">Careers</a></li>
         </ul>
         </div>
         <div class="col-md-3 mb-4">
@@ -50,7 +50,7 @@
     <hr class="divider">
     <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
         <div class="d-flex align-items-center">
-        <a href="index.html"><img src="img/logo.png" alt="Logo" class="footer-logo me-3"></a>
+        <a href="/"><img src="img/logo.png" alt="Logo" class="footer-logo me-3"></a>
         </div>
         <div class="d-flex align-items-center">
         <a href="https://www.facebook.com/" class="mx-2" target="_blank"><img src="img/face.svg" alt="Facebook" style="width: 45px;"></a>

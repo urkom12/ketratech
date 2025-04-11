@@ -399,7 +399,7 @@
 
       <p>If there is a position for you, send us your application!</p>
 
-      <a href="hirenow.php"><div class="btn ketra_btn line-show">Apply</div</a>
+      <a href="/hirenow"><div class="btn ketra_btn line-show">Apply</div</a>
 
     </div>
 

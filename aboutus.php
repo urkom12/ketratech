@@ -44,7 +44,7 @@
             <div class="col-lg-6 d-flex flex-column justify-content-center" style="padding-bottom: 1rem;">
                 <h2>We combine innovation, expertise, and a deep understanding of your business needs to deliver outstanding results.</h2>
                 <p>"Our goal is to build solutions that drive growth and create value for your business. With a tailored approach and attention to detail, we ensure every project exceeds expectations."</p>
-                <a href="index.html" class="btn btn-custom mt-3">See our work</a>
+                <a href="/" class="btn btn-custom mt-3">See our work</a>
             </div>
             <div class="col-lg-6">
                 <img src="img/slika_aboutus1.avif" alt="img/slika_aboutus1.png" class="custom-image">

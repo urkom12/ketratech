@@ -89,13 +89,13 @@
 
             <div class="form-container" id="formContainer">
                 <h2>Details</h2>
-                <form action="https://formsubmit.co/steveagency2001@gmail.com" method="POST" data-error="http://ketratech.net/error-page.html">
+                <form action="https://formsubmit.co/steveagency2001@gmail.com" method="POST" data-error="/error-page">
                     <input type="hidden" id="selected-date" name="selected-date">
                     <input type="hidden" id="selected-time" name="selected-time">
                     <input type="hidden" id="selected-timezone" name="selected-timezone">
                     <input type="hidden" id="selected-appt" name="selected-appt">
                     <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_next" value="http://ketratech.net/thank-you.html">
+                    <input type="hidden" name="_next" value="/thank-you">
 
                     <div class="form-field">
                         <label for="first-name">First Name</label>
@@ -134,7 +134,7 @@
 
 if (!response.ok) {
 
-  window.location.href = 'http://localhost/ketra1/error-page.html';
+  window.location.href = '/error-page';
 
 }
 

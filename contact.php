@@ -321,13 +321,13 @@ mysqli_close($conn);
     </div>
     <div class="row">
         <div class="col-md-4 animated-link-mob">
-            <a href="aboutus.php" class="animated-link">Learn more about us</a>
+            <a href="/aboutus" class="animated-link">Learn more about us</a>
         </div>
         <div class="col-md-4 animated-link-mob" style="text-align: center;">
-            <a href="services.php" class="animated-link">See our plans</a>
+            <a href="/services" class="animated-link">See our plans</a>
         </div>
         <div class="col-md-4 animated-link-mob"style="text-align: right;">
-            <a href="careers.php" class="animated-link">Open positions</a>
+            <a href="/careers" class="animated-link">Open positions</a>
         </div>
     </div>
 </section>

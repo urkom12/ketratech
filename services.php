@@ -49,7 +49,7 @@
             <li>• Contact form integration</li>
             <li style="color: transparent;">.</li>
         </ul>
-        <a href="hirenow.php">
+        <a href="/hirenow">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -71,7 +71,7 @@
             <li>• Blog integration</li>
             <li>• Basic e-commerce functionality</li>
         </ul>
-        <a href="hirenow.php">
+        <a href="/hirenow">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -94,10 +94,10 @@
         </ul>
         <div class="d-flex gap-3">
             <button class="btn btn-primary w-50 mt-4">
-            <a href="hirenow.php" style="color: white; text-decoration: none;">Schedule</a>
+            <a href="/hirenow" style="color: white; text-decoration: none;">Schedule</a>
             </button>
             <button class="btn btn-outline-light w-50 mt-4">
-            <a href="aboutus.php" style="color: white; text-decoration: none;">View our work</a>
+            <a href="/aboutus" style="color: white; text-decoration: none;">View our work</a>
             </button>
         </div>
         </div>
@@ -129,7 +129,7 @@
             <li>• Contact form integration</li>
             <li style="color: transparent;">.</li>
         </ul>
-        <a href="hirenow.php">
+        <a href="/hirenow">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -151,7 +151,7 @@
             <li>• Blog integration</li>
             <li>• Basic e-commerce functionality</li>
         </ul>
-        <a href="hirenow.php">
+        <a href="/hirenow">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -165,7 +165,7 @@
     <div class="container py-5">
 
         <h2 class="mb-4">We have designed a strategy to completely elevate your UX</h2>
-        <a href="aboutus.php">
+        <a href="/aboutus">
             <button class="btn btn-primary mb-5">See our results</button>
         </a>
 
