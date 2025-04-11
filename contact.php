@@ -63,7 +63,8 @@ mysqli_close($conn);
 
 <div class="main">   
     <video autoplay muted loop disablePictureInPicture> 
-    <source src="img/gradient.webm" type="video/mp4">
+    <source src="img/gradient.webm" type="video/webm">
+    <source src="img/gradient.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 </div>
