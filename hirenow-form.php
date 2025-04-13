@@ -1,5 +1,5 @@
 <?php include_once('header.php'); ?>
-<link rel="stylesheet" href="hirenow.css">
+<link rel="stylesheet" href="hirenow-form.css">
 
 <div class="main">   
     <video autoplay muted loop playsinline preload="auto" disablePictureInPicture>
