@@ -300,3 +300,4 @@
 
 
 <?php include 'footer.php'; ?>
+<script src="/assets/js/services.js"></script>

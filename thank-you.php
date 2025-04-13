@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You!</title>
-    <link rel="stylesheet" href="thank-you.css">
+    <link rel="stylesheet" href="/assets/css/thank-you.css">
 </head>
 <body>
     <div class="container">
