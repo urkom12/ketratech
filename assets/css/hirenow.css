@@ -23,7 +23,7 @@
     border-radius: 15px;
 }
 .hire-now-boxes .box1{
-    background-image: url('img/hirenow1.jpg');
+    background-image: url('../../img/hirenow1.jpg');
 }
 .hire-now-boxes .box1 img, .hire-now-boxes .box3 img{
     margin-top:auto;
@@ -51,10 +51,10 @@
     z-index: 2;
 }
 .hire-now-boxes .box2{
-    background-image: url('img/hirenow2.jpg');
+    background-image: url('../../img/hirenow2.jpg');
 }
 .hire-now-boxes .box3{
-    background-image: url('img/hirenow3.png');
+    background-image: url('../../img/hirenow3.png');
 }
 .box1 ul, .box2 ul, .box3 ul {
     list-style-type: disc;

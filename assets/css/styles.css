@@ -368,7 +368,7 @@ h2{
 
 .accordion-header {
   background-color: #4a3b99; 
-  padding: 1rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
