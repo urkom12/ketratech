@@ -9,7 +9,7 @@ document.querySelector('.nav-link')?.addEventListener('click', function () {
 
   setTimeout(() => {
     loader.classList.remove('loader--active');
-  }, 5000);
+  }, 1000);
 });
 
 function checkVisibility() {
@@ -32,16 +32,28 @@ checkVisibility();
 
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector('.navbar');
+const delta = 5;
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > lastScrollY) {
-    navbar.classList.add('hide');
-    navbar.classList.remove('show');
-  } else {
+  const currentScroll = window.scrollY;
+
+  if (!navbar) return;
+
+  if (currentScroll <= 0) {
     navbar.classList.add('show');
     navbar.classList.remove('hide');
+  } 
+  else if (Math.abs(currentScroll - lastScrollY) > delta) {
+    if (currentScroll > lastScrollY) {
+      navbar.classList.add('hide');
+      navbar.classList.remove('show');
+    } else {
+      navbar.classList.add('show');
+      navbar.classList.remove('hide');
+    }
   }
-  lastScrollY = window.scrollY;
+
+  lastScrollY = currentScroll;
 });
 
 const aTags = document.querySelectorAll('ul li a');

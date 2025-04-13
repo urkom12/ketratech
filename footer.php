@@ -1,6 +1,6 @@
 <footer class="footer-section text-white py-5">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-5 hidden">
             <h2 class="mb-3">Elevate your UX today!<br>Schedule a call and make a difference!</h2>
             <a href="/hirenow"><button class="btn btn-primary">Hire Now</button></a>
         </div>

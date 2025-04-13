@@ -3,6 +3,7 @@
     padding-top:10rem;
     display:flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 .hire-now-boxes{
     display:flex;
@@ -84,9 +85,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* tamna providna senka */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
-  pointer-events: none; /* ✅ omogućava klikove kroz overlay */
+  pointer-events: none;
   border-radius: inherit;
 }
 
@@ -95,4 +96,7 @@
 .hire-now-boxes .box3 {
   position: relative;
   overflow: hidden;
+}
+.hidden{
+    display: none;
 }
