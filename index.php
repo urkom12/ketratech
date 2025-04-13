@@ -44,25 +44,27 @@
 
 <section class="ux-section py-5 text-center text-lg-start">
     <div class="container">
-        <h2 class="text-primary mb-4">Is your UX good enough?<br><span>Check the following:</span></h2>
-        <div class="row justify-content-center">
+        <div class="row mb-4">
+            <h2 class="text-primary">Is your UX good enough?<br><span style="font-weight: 700;">Check the following:</span></h2>
+        </div>
+        <div class="row justify-content-center pt-4">
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-3"><img src="img/icon1.svg" alt="Icon 1" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/icon1.svg" alt="Icon 1" class="img-fluid"></div>
                     <h3 class="fw-bold">Prioritizing all of the features can backfire.</h3>
                     <p class="text-muted">Too much information overwhelms users, leading to confusion and a steeper learning curve.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-3"><img src="img/icon2.svg" alt="Icon 2" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/icon2.svg" alt="Icon 2" class="img-fluid"></div>
                     <h3 class="fw-bold">Inconsistent and unpractical design.</h3>
                     <p class="text-muted">Adding elements without a clear strategy disrupts user experience and flow.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-3"><img src="img/icon3.svg" alt="Icon 3" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/icon3.svg" alt="Icon 3" class="img-fluid"></div>
                     <h3 class="fw-bold">Lack of user-centered design.</h3>
                     <p class="text-muted">Ignoring user needs results in decreased engagement and higher bounce rates.</p>
                 </div>

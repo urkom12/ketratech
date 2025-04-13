@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal; 
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway';
   background: linear-gradient(145deg, #2e026b, #450d96);
   height: 100vh;
   color: #fff;

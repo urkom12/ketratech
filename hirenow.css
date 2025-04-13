@@ -1,286 +1,98 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(145deg, #2e026b, #450d96);
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-nav button{
-  width: auto !important;
-}
-
-.hire-now{
-  padding-top: 7rem;
-}
-
-.hire-now h1 {
-  font-size: 3.5rem; 
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #A89CFD !important;
-}
-
-.hire-now p {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.calendar-container, .time-selector-form, .form-container {
-  background-color: #1e0735;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  padding: 20px 20px;
-  width: 400px;
-  text-align: center;
-  display: none;
-}
-
-.calendar-container.active, .time-selector-form.active, .form-container.active {
-  display: block;
-}
-
-h1, h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.calendar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.calendar-header button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.calendar-header button:hover {
-  color: #8f8fff;
-}
-
-.calendar-days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.calendar-days div {
-  padding: 10px;
-  text-align: center;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.calendar-days .inactive {
-  color: #555;
-  pointer-events: none;
-}
-
-.calendar-days .active:hover {
-  background-color: #3d3d5c;
-}
-
-.calendar-days .selected {
-  background-color: #8f8fff;
-  color: #fff;
-}
-
-button {
-  background-color: #6a0dad;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #8145c3;
-}
-
-button:disabled {
-  background-color: #555;
-  cursor: not-allowed;
-}
-
-.back-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.9em;
-  width: 5rem;
-}
-
-.back-button:hover {
-  background-color: #ff4c4c;
-}
-
-
-
-.time-selector-form {
-  position: relative;
-  padding: 40px 20px 20px; 
-  border-radius: 8px;
-}
-
-.timezone {
-  margin-bottom: 20px;
-  border: 1px solid #A89CFD;
-  border-radius: 5px;
-}
-
-.timezone label, .time-input label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1rem;
-  text-align: left;
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-.time-input{
-  border: 1px solid #A89CFD ;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.timezone select, .time-input input {
-  background-color: transparent;
-  color: white;
-  width: 90%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-.timezone option{
-  color: black;
-  background-color: white;
-}
-
-.time-options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.time-options button {
-  background-color: #3e1363;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.time-options button:hover {
-  background-color: #532285;
-}
-
-.form-container{
-  position: relative;
-}
-
-.form-field {
-  margin-bottom: 15px;
-  text-align: left;
-  border: 1px solid #A89CFD; 
-  border-radius: 5px;
-}
-
-.form-field label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 1rem;
-  padding-top: 5px;
-  padding-left: 10px;
-}
-
-.form-field input, .form-field textarea {
-  background-color: transparent;
-  color: white;
-  width: 95%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-input:focus{
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none; 
-  color: white;
-}
-
-.form-field textarea {
-  resize: none;
-}
-
-@media (max-width: 768px) {
-  .hire-now{
-    padding-top: 7rem;
+.hire-now-main{
     text-align: center;
-  }
-
-  .hire-now h1 {
+    padding-top:10rem;
+    display:flex;
+    flex-direction: column;
+}
+.hire-now-boxes{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+}
+.hire-now-boxes .box1, .hire-now-boxes .box2, .hire-now-boxes .box3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+    border-radius: 15px;
+}
+.hire-now-boxes .box1{
+    background-image: url('img/hirenow1.jpg');
+}
+.hire-now-boxes .box1 img, .hire-now-boxes .box3 img{
+    margin-top:auto;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    z-index: 2;
+}
+.hire-now-boxes .box2 img{
+    margin-top:auto;
+    width: 20%;
+    height: 20%;
+    margin-bottom: -2rem;
+    position: relative;
+    z-index: 2;
+}
+.hire-now-boxes .box1 button, .hire-now-boxes .box2 button, .hire-now-boxes .box3 button{
+    margin-bottom: 2rem;
+}
+.hire-now-boxes .box1 h4, .hire-now-boxes .box2 h4, .hire-now-boxes .box3 h4{
+    font-weight: bold;
     font-size: 2rem;
-  }
-
-  .hire-now p {
-    font-size: 1rem;
-  }
-
-  .back-button {
-    font-size: 0.8rem;
-  }
+    padding: 0 0.4rem 0 0.4rem;
+    position: relative;
+    z-index: 2;
+}
+.hire-now-boxes .box2{
+    background-image: url('img/hirenow2.jpg');
+}
+.hire-now-boxes .box3{
+    background-image: url('img/hirenow3.png');
+}
+.box1 ul, .box2 ul, .box3 ul {
+    list-style-type: disc;
+    text-align: left;
+}
+.box1 ul li, .box2 ul li, .box3 ul li {
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+}
+.box1 li::marker {
+    margin-left: 0.3rem;
+    color: #fff;
+}
+.hire-now-buttons{
+    color: white;
+    padding: 0.35rem 1rem 0.35rem 1rem;
+    background: linear-gradient(-90deg, #1884e3, #0e508a 50%, #e5b4f989);
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+.hire-now-boxes .box1::before,
+.hire-now-boxes .box2::before,
+.hire-now-boxes .box3::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* tamna providna senka */
+  z-index: 1;
+  pointer-events: none; /* ✅ omogućava klikove kroz overlay */
+  border-radius: inherit;
 }
 
-@media (max-width: 480px) {
-  .body{
-    width: 100%;
-  }
-
-  button {
-    font-size: 0.8rem;
-    padding: 8px;
-  }
-
-  .hire-now h1 {
-    font-size: 1.5rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .hire-now p {
-    font-size: 0.9rem;
-  }
-
-  .calendar-container, .time-selector-form, .form-container {
-    width: auto !important;
-  }
-
-  .calc-response{
-    width: 100% !important;
-  }
+.hire-now-boxes .box1,
+.hire-now-boxes .box2,
+.hire-now-boxes .box3 {
+  position: relative;
+  overflow: hidden;
 }

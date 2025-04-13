@@ -1,40 +1,6 @@
-function checkVisibility() {
-    const boxes = document.querySelectorAll('.box');
-    const windowHeight = window.innerHeight;
-
-    boxes.forEach((box, index) => {
-        const boxTop = box.getBoundingClientRect().top;
-
-        if (boxTop <= windowHeight * 0.8) { 
-            setTimeout(() => {
-                box.classList.add('visible');
-            }, index * 200); 
-        }
-    });
-}
-
 window.addEventListener('scroll', checkVisibility);
 
 checkVisibility();
-
-document.addEventListener("DOMContentLoaded", function () {
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
-
-    accordionHeaders.forEach((header) => {
-        const collapseTargetId = header.getAttribute("data-bs-target");
-        const collapseTarget = document.querySelector(collapseTargetId);
-
-        collapseTarget.addEventListener("shown.bs.collapse", function () {
-        const icon = header.querySelector(".icon");
-        icon.textContent = "−";
-        });
-
-        collapseTarget.addEventListener("hidden.bs.collapse", function () {
-        const icon = header.querySelector(".icon");
-        icon.textContent = "+";
-        });
-    });
-});
 
 let lastScrollY = window.scrollY;
 const navbar = document.querySelector('.navbar');

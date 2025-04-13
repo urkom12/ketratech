@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-Regular.woff2') format('woff2'); /* Putanja do fonta */
+  font-weight: normal;
+  font-style: normal; 
+}
+
 body {
   font-family: 'Raleway';
   color: white;
@@ -355,6 +362,9 @@ h2{
   opacity: 1;
   transform: translateY(0);
 }
+.accordion-collapse {
+  transition: height 0.2s ease-in-out !important;
+}
 
 .accordion-header {
   background-color: #4a3b99; 
@@ -382,6 +392,7 @@ h2{
 }
 
 .icon {
+  margin-top: 6rem;
   font-size: 1.5rem;
   color: #ffffff;
   transition: transform 0.3s ease;
@@ -1099,7 +1110,6 @@ textarea:focus {
 .card {
   min-width: 220px;
   border: 2px solid rgb(3, 255, 138);
-  padding: 30px 20px;
   border-radius: 4px;
 }
 
@@ -1280,9 +1290,6 @@ input[type="email"]:focus {
 }
 
 .icon {
-  position: absolute;
-  right: 15px;
-  top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
   color: #999;
@@ -1382,4 +1389,10 @@ input[type="email"]:focus {
   .footer-links h5{
     font-size: 0.7rem
   }
+}
+.padding-left1{
+  padding-left: 1rem;
+}
+.padding-right1{
+  padding-right: 1rem;
 }

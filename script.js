@@ -22,7 +22,7 @@ function checkVisibility() {
     if (boxTop <= windowHeight * 0.8) {
       setTimeout(() => {
         box.classList.add('visible');
-      }, index * 200);
+      }, index * 50);
     }
   });
 }

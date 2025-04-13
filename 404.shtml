@@ -10,7 +10,7 @@ body {
 }
 
 body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Raleway';
   font-weight: normal;
   margin: 0;
   padding: 0;

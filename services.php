@@ -217,85 +217,85 @@
 
 
 <section class="faq-section py-5">
-<div class="container">
-    <h2 class="text-center text-white mb-4">Frequently Asked Questions</h2>
+    <div class="container">
+        <h2 class="text-center text-white mb-4">Frequently Asked Questions</h2>
 
-    <div class="accordion" id="faqAccordion">
+        <div class="accordion" id="faqAccordion">
 
-    <div class="box mb-3" style="max-width: 70%;">
-        <div class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <div class="d-flex justify-content-between align-items-center clickable">
-                <span class="text-white">What is the typical timeline for building a website?</span>
-                <span class="icon">+</span>
+            <div class="box mb-3" style="max-width: 70%;">
+                <div class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="d-flex justify-content-between align-items-center clickable">
+                        <span class="text-white">What is the typical timeline for building a website?</span>
+                        <span class="icon">+</span>
+                    </div>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white-50">
+                        Our goal is to complete each website in approximately <b>5 days</b>, depending on its complexity. 
+                        This efficient timeline allows us to deliver high-quality results while maintaining productivity.
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-            <div class="accordion-body text-white-50">
-                Our goal is to complete each website in approximately <b>5 days</b>, depending on its complexity. 
-                This efficient timeline allows us to deliver high-quality results while maintaining productivity.
+
+            <div class="box mb-3" style="max-width: 70%;">
+                <div class="accordion-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex justify-content-between align-items-center clickable">
+                        <span class="text-white">Can I update the website after it's launched?</span>
+                        <span class="icon">+</span>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white-50">
+                        Absolutely! We provide user-friendly content management systems (CMS) that allow you to update text, images, and more without any technical knowledge.
+                    </div>
+                </div>
             </div>
+
+            <div class="box mb-3" style="max-width: 70%;">
+                <div class="accordion-header" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="d-flex justify-content-between align-items-center clickable">
+                        <span class="text-white">Do you offer support after the project is completed?</span>
+                        <span class="icon">+</span>
+                    </div>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white-50">
+                        Yes, we offer post-launch support and maintenance packages to ensure your website runs smoothly and stays updated.
+                    </div>
+                </div>
+            </div>
+
+            <div class="box mb-3" style="max-width: 70%;">
+                <div class="accordion-header" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="d-flex justify-content-between align-items-center clickable">
+                        <span class="text-white">What platforms do you use to build websites?</span>
+                        <span class="icon">+</span>
+                    </div>
+                </div>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white-50">
+                        We primarily develop websites using <b>Visual Studio</b> with modern technologies such as <b>HTML, CSS, Bootstrap,</b> and <b>JavaScript</b>. 
+                        Additionally, if clients prefer, we can create websites using <b>Webflow</b> for a more visual and design-focused approach.
+                    </div>
+                </div>
+            </div>
+
+            <div class="box mb-3" style="max-width: 70%;">
+                <div class="accordion-header" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div class="d-flex justify-content-between align-items-center clickable">
+                        <span class="text-white">How do you ensure the website is mobile-friendly?</span>
+                        <span class="icon">+</span>
+                    </div>
+                </div>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-white-50">
+                        All our websites are designed with a <b>responsive approach</b>, ensuring they look and perform perfectly on desktops, tablets, and smartphones.
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="box mb-3" style="max-width: 70%;">
-        <div class="accordion-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <div class="d-flex justify-content-between align-items-center clickable">
-                <span class="text-white">Can I update the website after it's launched?</span>
-                <span class="icon">+</span>
-            </div>
-        </div>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-            <div class="accordion-body text-white-50">
-                Absolutely! We provide user-friendly content management systems (CMS) that allow you to update text, images, and more without any technical knowledge.
-            </div>
-        </div>
-    </div>
-
-    <div class="box mb-3" style="max-width: 70%;">
-        <div class="accordion-header" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <div class="d-flex justify-content-between align-items-center clickable">
-                <span class="text-white">Do you offer support after the project is completed?</span>
-                <span class="icon">+</span>
-            </div>
-        </div>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-            <div class="accordion-body text-white-50">
-                Yes, we offer post-launch support and maintenance packages to ensure your website runs smoothly and stays updated.
-            </div>
-        </div>
-    </div>
-
-    <div class="box mb-3" style="max-width: 70%;">
-        <div class="accordion-header" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            <div class="d-flex justify-content-between align-items-center clickable">
-                <span class="text-white">What platforms do you use to build websites?</span>
-                <span class="icon">+</span>
-            </div>
-        </div>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-            <div class="accordion-body text-white-50">
-                We primarily develop websites using <b>Visual Studio</b> with modern technologies such as <b>HTML, CSS, Bootstrap,</b> and <b>JavaScript</b>. 
-                Additionally, if clients prefer, we can create websites using <b>Webflow</b> for a more visual and design-focused approach.
-            </div>
-        </div>
-    </div>
-
-    <div class="box mb-3" style="max-width: 70%;">
-        <div class="accordion-header" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            <div class="d-flex justify-content-between align-items-center clickable">
-                <span class="text-white">How do you ensure the website is mobile-friendly?</span>
-                <span class="icon">+</span>
-            </div>
-        </div>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-            <div class="accordion-body text-white-50">
-                All our websites are designed with a <b>responsive approach</b>, ensuring they look and perform perfectly on desktops, tablets, and smartphones.
-            </div>
-        </div>
-    </div>
-
-    </div>
-</div>
 </section>
 
 
