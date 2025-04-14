@@ -17,7 +17,7 @@
 
         <div class="calc-response col-6" style="margin-right: auto;">
         <div class="calendar-container active" id="calendarContainer">
-            <h2 style="font-size: 1.5rem;">Select a day</h2> <!-- NOVO -->
+            <h2 style="font-size: 1.5rem;">Select a day</h2>
             <div class="calendar-header">
             <h2 id="currentMonthYear"></h2>
                 <div class="calendar-nav">
@@ -25,7 +25,7 @@
                     <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
-            <div class="calendar-weekdays"> <!-- NOVO -->
+            <div class="calendar-weekdays">
                 <div>Mo</div>
                 <div>Tu</div>
                 <div>We</div>
@@ -39,13 +39,13 @@
             </div>
 
             <div class="time-selector-form" id="timeSelectorForm">
-                <h3 style="font-size: 2rem;">Select a time</h3>
+                <h3 style="font-size: 1.5rem;">Select a time</h3>
                 <p id="selectedDateText"></p>
 
                 <div class="timezone">
                     <label for="timezone">Select a timezone:</label>
                     <select id="timezone" name="timezone">
-                        <option value="0">Select your time zone</option>
+                        <option value="0"></option>
                         <option value="(GMT -12:00)">(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="(GMT -11:00)">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="(GMT -10:00)">(GMT -10:00) Hawaii</option>
@@ -91,11 +91,11 @@
 
                 <div class="time-input">
                     <label for="appt">Select a time:</label>
-                    <input type="time" id="appt" name="appt" step="1800" required>
+                    <input type="time" id="appt" name="appt" step="1800" required />
                 </div>
 
                 <div class="form-navigation">
-                    <button class="back-button" id="backToCalendar">Back</button>
+                    <button class="back-button" id="backToCalendar"><i class="fas fa-arrow-left"></i></button>
                     <button id="toForm" disabled>Next Step</button>
                 </div>
             </div>

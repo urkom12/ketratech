@@ -132,7 +132,7 @@ mysqli_close($conn);
 
                                 <div class="form-border col-md-6 mb-3">
                                     <label for="country" class="form-label">Country</label>
-                                    <select id="country" name="country" class="form-control">
+                                    <select id="country" name="country" class="form-select">
                                         <option value="" disabled selected>Select a country</option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Åland Islands">Åland Islands</option>

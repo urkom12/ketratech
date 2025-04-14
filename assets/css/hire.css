@@ -22,8 +22,12 @@
     height: 40rem;
     border-radius: 15px;
 }
-.hire-now-boxes .box1{
-    background-image: url('../../img/hirenow1.jpg');
+.hire-now-boxes .box1,
+.hire-now-boxes .box2,
+.hire-now-boxes .box3 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .hire-now-boxes .box1 img, .hire-now-boxes .box3 img{
     margin-top:auto;
@@ -32,6 +36,11 @@
     position: relative;
     z-index: 2;
 }
+
+.hire-now-boxes .box1 img {
+  filter: drop-shadow(0 0 0 white) drop-shadow(0 0 1px white);
+}
+
 .hire-now-boxes .box2 img{
     margin-top:auto;
     width: 20%;
@@ -50,12 +59,7 @@
     position: relative;
     z-index: 2;
 }
-.hire-now-boxes .box2{
-    background-image: url('../../img/hirenow2.jpg');
-}
-.hire-now-boxes .box3{
-    background-image: url('../../img/hirenow3.png');
-}
+
 .box1 ul, .box2 ul, .box3 ul {
     list-style-type: disc;
     text-align: left;
@@ -85,18 +89,44 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, filter 0.4s ease;
   z-index: 1;
   pointer-events: none;
   border-radius: inherit;
 }
 
-.hire-now-boxes .box1,
-.hire-now-boxes .box2,
-.hire-now-boxes .box3 {
-  position: relative;
-  overflow: hidden;
+.hire-now-boxes .box1::before {
+  background-image: url('../../img/hirenow1.jpg');
 }
+
+.hire-now-boxes .box2::before {
+  background-image: url('../../img/hirenow2.jpg');
+}
+
+.hire-now-boxes .box3::before {
+  background-image: url('../../img/hirenow3.png');
+}
+
+.hire-now-boxes .box1:hover::before,
+.hire-now-boxes .box2:hover::before,
+.hire-now-boxes .box3:hover::before {
+  transform: scale(2);
+  filter: blur(5px);
+}
+
 .hidden{
-    display: none;
+  display: none;
+}
+
+.hire-now-boxes a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.hire-now-boxes .box1 img {
+  fill: white; /* ili crna, ili neka druga vrednost */
+  color: white; /* ako SVG koristi currentColor */
 }
