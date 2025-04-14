@@ -1,5 +1,5 @@
 <?php include_once('header.php'); ?>
-<link rel="stylesheet" href="/assets/css/hirenow-form.css">
+<link rel="stylesheet" href="/assets/css/booking.css">
 
 <div class="main">   
     <video autoplay muted loop playsinline preload="auto" disablePictureInPicture>
@@ -16,18 +16,30 @@
         </div>
 
         <div class="calc-response col-6" style="margin-right: auto;">
-            <div class="calendar-container active" id="calendarContainer">
-                <div class="calendar-header">
-                    <button id="prevMonth">&#8249;</button>
-                    <h2 id="currentMonthYear"></h2>
-                    <button id="nextMonth">&#8250;</button>
+        <div class="calendar-container active" id="calendarContainer">
+            <h2 style="font-size: 1.5rem;">Select a day</h2> <!-- NOVO -->
+            <div class="calendar-header">
+            <h2 id="currentMonthYear"></h2>
+                <div class="calendar-nav">
+                    <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
                 </div>
+            </div>
+            <div class="calendar-weekdays"> <!-- NOVO -->
+                <div>Mo</div>
+                <div>Tu</div>
+                <div>We</div>
+                <div>Th</div>
+                <div>Fr</div>
+                <div>Sa</div>
+                <div>Su</div>
+            </div>
                 <div class="calendar-days" id="calendarDays"></div>
                 <button id="toTimeSelector" disabled>Next Step</button>
             </div>
 
             <div class="time-selector-form" id="timeSelectorForm">
-                <h1 style="font-size: 2rem;">Select a time</h1>
+                <h3 style="font-size: 2rem;">Select a time</h3>
                 <p id="selectedDateText"></p>
 
                 <div class="timezone">
@@ -141,7 +153,7 @@ if (!response.ok) {
 
 </script>
 
-<script src="/assets/js/hirenow-form.js"></script>
+<script src="/assets/js/booking.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="text-center mb-5 hidden">
             <h2 class="mb-3">Elevate your UX today!<br>Schedule a call and make a difference!</h2>
-            <a href="/hirenow"><button class="btn btn-primary">Hire Now</button></a>
+            <a href="/hire"><button class="btn btn-primary">Hire Now</button></a>
         </div>
         <hr class="divider">
         <div class="row">
@@ -15,7 +15,7 @@
                     By checking the box, I agree to and accept the Privacy Policy and Terms of Service.
                     </label>
                 </div>
-                <a href="/hirenow"><button class="btn btn-primary">Get updates</button></a>
+                <a href="/hire"><button class="btn btn-primary">Get updates</button></a>
             </div>
             <div class="col-md-3 mb-4">
                 <h4>COMPANY</h4>

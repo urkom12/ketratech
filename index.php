@@ -37,7 +37,7 @@
         <div class="hero-content d-flex flex-column align-items-start justify-content-center h-100">
             <h1>We make <span>custom websites</span> for your business</h1>
             <p>It doesn't matter if you are a startup or enterprise, we take our job seriously!</p>
-            <a href="/hirenow" class="btn btn-custom">Hire Now</a>
+            <a href="/hire" class="btn btn-custom">Hire Now</a>
         </div>
     </div>
 </div>

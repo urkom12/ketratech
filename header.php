@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ketra Tech</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
@@ -23,7 +24,7 @@
                         <li class="nav-item"><a class="nav-link" href="/aboutus" data-text="about us">About us</a></li>
                         <li class="nav-item"><a class="nav-link" href="/careers" data-text="careers">Careers</a></li>
                     </ul>
-                    <a href="/hirenow"><button class="schedule">Hire Now</button></a>
+                    <a href="/hire"><button class="schedule">Hire Now</button></a>
                 </div>
             </div>
         </nav>    

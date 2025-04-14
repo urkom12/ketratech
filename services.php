@@ -50,7 +50,7 @@
             <li>• Contact form integration</li>
             <li style="color: transparent;">.</li>
         </ul>
-        <a href="/hirenow">
+        <a href="/hire">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -72,7 +72,7 @@
             <li>• Blog integration</li>
             <li>• Basic e-commerce functionality</li>
         </ul>
-        <a href="/hirenow">
+        <a href="/hire">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -95,7 +95,7 @@
         </ul>
         <div class="d-flex gap-3">
             <button class="btn btn-primary w-50 mt-4">
-            <a href="/hirenow" style="color: white; text-decoration: none;">Schedule</a>
+            <a href="/hire" style="color: white; text-decoration: none;">Schedule</a>
             </button>
             <button class="btn btn-outline-light w-50 mt-4">
             <a href="/aboutus" style="color: white; text-decoration: none;">View our work</a>
@@ -130,7 +130,7 @@
             <li>• Contact form integration</li>
             <li style="color: transparent;">.</li>
         </ul>
-        <a href="/hirenow">
+        <a href="/hire">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>
@@ -152,7 +152,7 @@
             <li>• Blog integration</li>
             <li>• Basic e-commerce functionality</li>
         </ul>
-        <a href="/hirenow">
+        <a href="/hire">
             <button class="btn btn-primary w-100 mt-4">Schedule</button>
         </a>
         </div>

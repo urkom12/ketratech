@@ -29,26 +29,27 @@ function isDateInPast(year, month, day) {
 }
 
 function renderCalendar() {
-  const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+  const firstDayOfWeek = new Date(currentYear, currentMonth, 1).getDay();
+  const adjustedFirstDay = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1;
   const lastDate = new Date(currentYear, currentMonth + 1, 0).getDate();
   const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();
 
   const dates = [];
 
-  for (let i = firstDay - 1; i >= 0; i--) {
-    dates.push({ date: daysInPrevMonth - i, class: 'inactive' });
-  }
+  for (let i = 0; i < adjustedFirstDay; i++) {
+    dates.push({ date: '', class: 'empty' });
+  }  
 
   for (let i = 1; i <= lastDate; i++) {
     const isPast = isDateInPast(currentYear, currentMonth, i);
-    dates.push({ date: i, class: isPast ? 'inactive' : 'active' });
-  }
+    dates.push({ date: i, class: isPast ? 'past' : 'active' });
+  }  
 
   const totalCells = 42;
   const nextMonthDays = totalCells - dates.length;
-  for (let i = 1; i <= nextMonthDays; i++) {
-    dates.push({ date: i, class: 'inactive' });
-  }
+  for (let i = 0; i < nextMonthDays; i++) {
+    dates.push({ date: '', class: 'empty' });
+  }  
 
   calendarDays.innerHTML = '';
   dates.forEach((day) => {
