@@ -102,13 +102,14 @@
 
             <div class="form-container" id="formContainer">
                 <h2>Details</h2>
-                <form action="https://formsubmit.co/steveagency2001@gmail.com" method="POST" data-error="/error-page">
+                <form action="/inc/form.php" method="POST" data-error="/error-page" autocomplete="off">
                     <input type="hidden" id="selected-date" name="selected-date">
                     <input type="hidden" id="selected-time" name="selected-time">
                     <input type="hidden" id="selected-timezone" name="selected-timezone">
                     <input type="hidden" id="selected-appt" name="selected-appt">
                     <input type="hidden" name="_template" value="box">
                     <input type="hidden" name="_next" value="/thank-you">
+                    <input type="hidden" id="selected-type" name="selected-type">
 
                     <div class="form-field">
                         <label for="first-name">First Name</label>
@@ -143,16 +144,6 @@
         </div>
     </div>
 </div>
-<script>
-
-if (!response.ok) {
-
-  window.location.href = '/error-page';
-
-}
-
-</script>
-
 <script src="/assets/js/booking.js"></script>
 
 </body>

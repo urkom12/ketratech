@@ -2,30 +2,62 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 $mail = new PHPMailer(true);
 
 try {
-    $mail->isSMTP();
-    $mail->Host = 'smtp.example.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = 'your_email@example.com'; 
-    $mail->Password = 'your_email_password';
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587; 
+    $firstName = $_POST['first-name'] ?? '';
+    $lastName = $_POST['last-name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $company = $_POST['company'] ?? '';
+    $message = $_POST['additional-message'] ?? '';
 
-    $mail->setFrom('your_email@example.com', 'Mailer');
-    $mail->addAddress('recipient@example.com', 'Joe User'); 
+    $selectedDate = $_POST['selected-date'] ?? '';
+    $selectedTime = $_POST['selected-time'] ?? '';
+    $selectedTimezone = $_POST['selected-timezone'] ?? '';
+    $selectedType = $_POST['selected-type'] ?? '';
+
+    $mail->isSMTP();
+    $mail->Host = 'mail.privateemail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = $_ENV['MAIL_USERNAME'];
+    $mail->Password = $_ENV['MAIL_PASSWORD'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port = 587;
+
+    $mail->setFrom($_ENV['MAIL_USERNAME'], 'KetraTech');
+    $mail->addAddress('support@ketratech.net');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Test Email';
-    $mail->Body    = 'This is a <b>test</b> email!';
-    $mail->AltBody = 'This is a test email in plain text.';
+    $mail->Subject = 'New Booking Submission';
+
+    $mail->Body = "
+        <h2>New Booking Submission</h2>
+        <p><strong>Name:</strong> {$firstName} {$lastName}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Company:</strong> {$company}</p>
+        <p><strong>Message:</strong> {$message}</p>
+        <p><strong>Date:</strong> {$selectedDate}</p>
+        <p><strong>Time:</strong> {$selectedTime}</p>
+        <p><strong>Timezone:</strong> {$selectedTimezone}</p>
+        <p><strong>Appointment ID:</strong> {$selectedType}</p>
+    ";
+
+    $mail->AltBody = "New booking from $firstName $lastName - Email: $email";
+    $mail->ContentType = 'text/html; charset=UTF-8';
+    $mail->addReplyTo($email, "$firstName $lastName");
 
     $mail->send();
-    echo 'Message has been sent';
+
+    header('Location: /thank-you');
+    exit;
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    header('Location: /error-page');
+    exit;
 }

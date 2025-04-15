@@ -109,6 +109,10 @@ backToCalendarButton.addEventListener('click', () => {
 });
 
 toFormButton.addEventListener('click', () => {
+  if (!selectedDate || !timeInput.value || timezoneSelect.value === "0") {
+    alert("Please select date, time and timezone.");
+    return;
+  }
   document.getElementById('selected-date').value = formatDate(selectedDate);
   document.getElementById('selected-time').value = timeInput.value;
   document.getElementById('selected-timezone').value = timezoneSelect.value;
@@ -136,3 +140,10 @@ form.addEventListener('submit', () => {
 
 validateTimeSelection();
 renderCalendar();
+
+const urlParams = new URLSearchParams(window.location.search);
+const appointmentId = urlParams.get('id');
+
+if (appointmentId) {
+    document.getElementById('selected-type').value = appointmentId;
+}

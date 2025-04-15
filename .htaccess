@@ -1,10 +1,9 @@
 RewriteEngine On
 
-# Uklanjanje .php iz URL-a i preusmeravanje
 RewriteCond %{THE_REQUEST} \s/+(.*?\.php) [NC]
+RewriteCond %{REQUEST_URI} !\.[a-z]+$ 
 RewriteRule ^ /%1 [R=301,L]
 
-# Omogućavanje pristupa fajlovima bez ekstenzije
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^/.]+)$ $1.php [L]
