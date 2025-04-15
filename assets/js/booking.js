@@ -95,6 +95,14 @@ document.getElementById('nextMonth').addEventListener('click', () => {
   renderCalendar();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const timeInput = document.getElementById('appt');
+  
+  timeInput.addEventListener('click', function() {
+    this.showPicker();
+  });
+});
+
 toTimeSelectorButton.addEventListener('click', () => {
   if (selectedDate) {
     calendarContainer.classList.remove('active');

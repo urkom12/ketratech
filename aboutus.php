@@ -70,7 +70,7 @@
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/icon1.svg" alt="Icon 1" class="img-fluid">
+                        <img src="img/Priority.png" alt="Icon 1" class="img-fluid">
                     </div>
                     <h5 class="fw-bold">Prioritizing essential features.</h5>
                     <p class="text-muted">We focus on what truly matters to your users, avoiding unnecessary complexity that could overwhelm them.</p>
@@ -79,7 +79,7 @@
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/icon2.svg" alt="Icon 2" class="img-fluid">
+                        <img src="img/Inconsistent.png" alt="Icon 2" class="img-fluid">
                     </div>
                     <h5 class="fw-bold">Consistency in design.</h5>
                     <p class="text-muted">Our approach ensures a seamless and intuitive user experience through thoughtful and coherent design strategies.</p>

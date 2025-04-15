@@ -39,13 +39,13 @@
             </div>
 
             <div class="time-selector-form" id="timeSelectorForm">
-                <h3 style="font-size: 1.5rem;">Select a time</h3>
+                <h2 style="font-size: 1.5rem;">Select a time</h2>
                 <p id="selectedDateText"></p>
 
                 <div class="timezone">
-                    <label for="timezone">Select a timezone:</label>
                     <select id="timezone" name="timezone">
-                        <option value="0"></option>
+                        <option value="" disabled selected hidden>Choose your timezone</option>
+                        <option value="0" disabled></option>
                         <option value="(GMT -12:00)">(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="(GMT -11:00)">(GMT -11:00) Midway Island, Samoa</option>
                         <option value="(GMT -10:00)">(GMT -10:00) Hawaii</option>
@@ -101,7 +101,7 @@
             </div>
 
             <div class="form-container" id="formContainer">
-                <h2>Details</h2>
+            <h2 style="font-size: 1.5rem;">Details</h2>
                 <form action="/inc/form.php" method="POST" data-error="/error-page" autocomplete="off">
                     <input type="hidden" id="selected-date" name="selected-date">
                     <input type="hidden" id="selected-time" name="selected-time">
@@ -112,31 +112,26 @@
                     <input type="hidden" id="selected-type" name="selected-type">
 
                     <div class="form-field">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
                     </div>
 
                     <div class="form-field">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
                     </div>
 
                     <div class="form-field">
-                        <label for="email">Business Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your business email" required>
+                        <input type="email" id="email" name="email" placeholder="Business email" required>
                     </div>
 
                     <div class="form-field">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company" placeholder="Name of your business" required>
+                        <input type="text" id="company" name="company" placeholder="Your business" required>
                     </div>
 
-                    <div class="form-field">
-                        <label for="additional-message">Additional Message</label>
-                        <textarea id="additional-message" name="additional-message"></textarea>
+                    <div class="form-field-additional">
+                        <textarea id="additional-message" name="additional-message" placeholder="Additional information"></textarea>
                     </div>
 
-                    <button class="back-button" id="backToTimeSelector">Back</button>
+                    <button class="back-button" id="backToTimeSelector"><i class="fas fa-arrow-left"></i></button>
                     <button type="submit">Book a Call</button>
                 </form>
             </div>

@@ -56,7 +56,7 @@
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/icon1.svg" alt="Icon 1" class="img-fluid">
+                        <img src="img/Priority.png" alt="Icon 1" class="img-fluid">
                     </div>
                     <h5 class="fw-bold">Prioritizing all of the features can backfire. </h5>
                     <p class="text-muted">Too much information overwhelms users, leading to confusion and a steeper learning curve.</p>
@@ -66,7 +66,7 @@
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/icon2.svg" alt="Icon 2" class="img-fluid">
+                        <img src="img/Inconsistent.png" alt="Icon 2" class="img-fluid">
                     </div>
                     <h5 class="fw-bold">Inconsistent and unpractical design. </h5>
                     <p class="text-muted">Adding elements without a clear strategy disrupts user experience and flow.</p>
@@ -76,7 +76,7 @@
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/icon3.svg" alt="Icon 3" class="img-fluid">
+                        <img src="img/UC Design.png" alt="Icon 3" class="img-fluid">
                     </div>
                     <h5 class="fw-bold">Design which is not user - centered.</h5>
                     <p class="text-muted">Ignoring the user needs results in decreased engagement, and higher bounce rates</p>
