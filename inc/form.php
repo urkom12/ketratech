@@ -24,15 +24,16 @@ try {
     $selectedType = $_POST['selected-type'] ?? '';
 
     $mail->isSMTP();
-    $mail->Host = 'mail.privateemail.com';
-    $mail->SMTPAuth = true;
-    $mail->Username = $_ENV['MAIL_USERNAME'];
-    $mail->Password = $_ENV['MAIL_PASSWORD'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 587;
+    $mail->Host = 'localhost';
+    $mail->Port = 25;
+    $mail->SMTPAuth = false;
+    $mail->SMTPSecure = false;
 
-    $mail->setFrom($_ENV['MAIL_USERNAME'], 'KetraTech');
+    $mail->setFrom('bookings@ketratech.net', 'KetraTech');
+
     $mail->addAddress('support@ketratech.net');
+
+    $mail->addReplyTo($email, "$firstName $lastName");
 
     $mail->isHTML(true);
     $mail->Subject = 'New Booking Submission';
@@ -50,8 +51,6 @@ try {
     ";
 
     $mail->AltBody = "New booking from $firstName $lastName - Email: $email";
-    $mail->ContentType = 'text/html; charset=UTF-8';
-    $mail->addReplyTo($email, "$firstName $lastName");
 
     $mail->send();
 
