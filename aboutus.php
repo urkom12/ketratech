@@ -89,4 +89,102 @@
     </div>
 </section>
 
+<section class="custom-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 d-flex flex-column justify-content-center" style="padding-bottom: 1rem;">
+        <h2>Empowering Businesses</h2>
+        <p>At KetraTech, we craft solutions that combine technology and creativity, driving your business toward success.
+          Our mission is to help you stand out in a competitive market with impactful strategies.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/Empowering Businesses1.avif" alt="img/Empowering Businesses1.avif" class="custom-image">
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <img src="img/Empowering Businesses2.avif" alt="img/Empowering Businesses2.avif" class="custom-image">
+      </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <h2>Innovation at the Core</h2>
+        <p>We place innovation at the heart of everything we do, delivering strategies tailored to your unique goals.
+          By blending expertise and cutting-edge tools, we ensure lasting results for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="team-section">
+<h2>Meet the team</h2>
+<div class="container">
+    <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 1</h3>
+            <p>Subtitle 1</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 2</h3>
+            <p>Subtitle 2</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 3</h3>
+            <p>Subtitle 3</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 4</h3>
+            <p>Subtitle 4</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 5</h3>
+            <p>Subtitle 5</p>
+        </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+        <div class="image-container">
+        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+        <div class="overlay">
+            <h3>Title 1</h3>
+            <p>Subtitle 1</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+
+
+<section class="centered-section">
+    <h1>Behind every great project is <br><span>a truly dedicated team</span></h1>
+    <p>At Ketra Tech, our experts combine creativity, technical - <br>expertise, and a passion to deliver succsessful solutions.</p>
+    <a href="index.html"><button class="btn btn-schedule">See our work</button></a>
+</section>
+
 <?php include_once('footer.php'); ?>

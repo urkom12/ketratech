@@ -1,7 +1,5 @@
 <?php include "header.php"; ?>
 
-<div id="particles-js"></div>
-
 <div class="loader loader--active">
     <div class="loader__icon">
         <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
@@ -25,8 +23,6 @@
         Your browser does not support the video tag.
     </video>
 </div>
-
-
 
 <div class="hero">
     <video autoplay muted loop disablePictureInPicture playsinline>
@@ -71,6 +67,84 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="team-section text-center py-5">
+    <div class="container">
+        <h2 class="mb-4">Our team of experts will help you to, achieve your <span>UX goals</span> with defined design strategy</h2>
+        <p class="mb-4">Let our people do the job and make your perfect design team, which will finish all for you.</p>
+        <div class="d-flex justify-content-center align-items-center mb-4">
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug1.avif" alt="Team Member 1" class="rounded-circle img-fluid box">
+            </div>
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug2.avif" alt="Team Member 2" class="rounded-circle img-fluid box">
+            </div>
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug3.avif" alt="Team Member 3" class="rounded-circle img-fluid box">
+            </div>
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug4.avif" alt="Team Member 4" class="rounded-circle img-fluid box">
+            </div>
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug5.avif" alt="Team Member 5" class="rounded-circle img-fluid box">
+            </div>
+            <div class="avatar-wrapper">
+            <img src="img/slika_krug6.avif" alt="Team Member 6" class="rounded-circle img-fluid box">
+            </div>
+        </div>
+        <a href="hirenow.php"><button class="btn ketra_btn line-show">Hire Now</button></a>
+    </div>  
+</section>
+  
+
+<section class="strategy-section text-center">
+<div class="container py-5">
+    <h2 class="mb-4">We have designed a strategy to completely elevate your UX</h2>
+    <a href="aboutus.html"><button class="btn btn-primary mb-5">See our results</button></a>
+
+    <div class="row strategy-box align-items-center">
+    <div class="col-md-8 col-12 mb-4 mb-md-0">
+        <div class="strategy-text">
+        <h2>First we listen, then we ask.</h2>
+        <p>Gathering the right info ensures we understand your needs and business goals.</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-12 text-center">
+        <div class="strategy-icon">
+        <img src="img/strategy1.png" alt="Strategy Icon 1">
+        </div>
+    </div>
+    </div>
+
+    <div class="row strategy-box flex-column-reverse flex-md-row align-items-center">
+    <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
+        <div class="strategy-icon">
+        <img src="img/strategy2.png" alt="Strategy Icon 2">
+        </div>
+    </div>
+    <div class="col-md-8 col-12">
+        <div class="strategy-text">
+        <h2>Second, we analyze. Then we tailor a customized plan.</h2>
+        <p>We craft a tailored approach regarding your information and optimal user experience.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="row strategy-box align-items-center">
+    <div class="col-md-8 col-12 mb-4 mb-md-0">
+        <div class="strategy-text">
+        <h2>Third, we apply strategy to give you perfection.</h2>
+        <p>As we have developed the right strategy, we turn your idea into a highly functional product.</p>
+        </div>
+    </div>
+    <div class="col-md-4 col-12 text-center">
+        <div class="strategy-icon">
+        <img src="img/strategy3.png" alt="Strategy Icon 3">
+        </div>
+    </div>
+    </div>
+</div>
 </section>
 
 <?php include "footer.php"; ?>
