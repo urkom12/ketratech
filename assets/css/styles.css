@@ -689,14 +689,20 @@ h2{
   overflow: hidden;
   margin: 20px auto;
   background: transparent;
+  width: auto;
+  height: auto;
+  pointer-events: none;
 }
 
 .image-container img {
+  display: block;
+  border-radius: 50%;
+  pointer-events: auto;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(66, 66, 255, 0.3) !important;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5), 0 10px 15px rgba(66, 66, 255, 0.3);
 }
 
 .overlay {
@@ -705,6 +711,7 @@ h2{
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -713,14 +720,15 @@ h2{
   color: white;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
-.image-container:hover img {
+.image-container img:hover {
   transform: scale(1.1);
   opacity: 0.3;
 }
 
-.image-container:hover .overlay {
+.image-container img:hover + .overlay {
   opacity: 1;
 }
 

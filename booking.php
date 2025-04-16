@@ -95,9 +95,10 @@
                 </div>
 
                 <div class="form-navigation">
-                    <button class="back-button" id="backToCalendar"><i class="fas fa-arrow-left"></i></button>
-                    <button id="toForm" disabled>Next Step</button>
+                    <button class="nav-button back-button" id="backToCalendar">Back</button>
+                    <button class="nav-button" id="toForm" disabled>Next Step</button>
                 </div>
+
             </div>
 
             <div class="form-container" id="formContainer">
@@ -124,15 +125,17 @@
                     </div>
 
                     <div class="form-field">
-                        <input type="text" id="company" name="company" placeholder="Your business" required>
+                        <input type="text" id="company" name="company" placeholder="Name of your business" required>
                     </div>
 
                     <div class="form-field-additional">
                         <textarea id="additional-message" name="additional-message" placeholder="Additional information"></textarea>
                     </div>
 
-                    <button class="back-button" id="backToTimeSelector"><i class="fas fa-arrow-left"></i></button>
-                    <button type="submit">Book a Call</button>
+                    <div class="form-buttons">
+                        <button class="back-button" id="backToTimeSelector">Back</button>
+                        <button type="submit">Book a Call</button>
+                    </div>
                 </form>
             </div>
 

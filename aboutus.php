@@ -121,60 +121,60 @@
 <h2>Meet the team</h2>
 <div class="container">
     <div class="row g-4">
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 1</h3>
-            <p>Subtitle 1</p>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 1</h3>
+                    <p>Subtitle 1</p>
+                </div>
+            </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 2</h3>
+                    <p>Subtitle 2</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 2</h3>
-            <p>Subtitle 2</p>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 3</h3>
+                    <p>Subtitle 3</p>
+                </div>
+            </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 4</h3>
+                    <p>Subtitle 4</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 3</h3>
-            <p>Subtitle 3</p>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 5</h3>
+                    <p>Subtitle 5</p>
+                </div>
+            </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="image-container">
+                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                <div class="overlay">
+                    <h3>Title 1</h3>
+                    <p>Subtitle 1</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 4</h3>
-            <p>Subtitle 4</p>
-        </div>
-        </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 5</h3>
-            <p>Subtitle 5</p>
-        </div>
-        </div>
-    </div>
-    <div class="col-12 col-sm-6 col-md-4">
-        <div class="image-container">
-        <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-        <div class="overlay">
-            <h3>Title 1</h3>
-            <p>Subtitle 1</p>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 </section>
