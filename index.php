@@ -25,8 +25,9 @@
 </div>
 
 <div class="hero">
-    <video autoplay muted loop disablePictureInPicture playsinline>
-        <source src="img/hero.webm" type="video/mp4">
+    <video autoplay muted loop playsinline preload="auto" disablePictureInPicture>
+        <source src="img/hero.mp4" type="video/mp4">
+        <source src="img/hero.webm" type="video/webm">
         Your browser does not support the video tag.
     </video>
     <div class="container">
@@ -46,21 +47,21 @@
         <div class="row justify-content-center pt-4">
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-2"><img src="img/icon1.svg" alt="Icon 1" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/Priority.png" alt="Icon 1" class="img-fluid"></div>
                     <h3 class="fw-bold">Prioritizing all of the features can backfire.</h3>
                     <p class="text-muted">Too much information overwhelms users, leading to confusion and a steeper learning curve.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-2"><img src="img/icon2.svg" alt="Icon 2" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/Inconsistent.png" alt="Icon 2" class="img-fluid"></div>
                     <h3 class="fw-bold">Inconsistent and unpractical design.</h3>
                     <p class="text-muted">Adding elements without a clear strategy disrupts user experience and flow.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
-                    <div class="icon mb-2"><img src="img/icon3.svg" alt="Icon 3" class="img-fluid"></div>
+                    <div class="icon mb-2"><img src="img/UC Design.png" alt="Icon 3" class="img-fluid"></div>
                     <h3 class="fw-bold">Lack of user-centered design.</h3>
                     <p class="text-muted">Ignoring user needs results in decreased engagement and higher bounce rates.</p>
                 </div>

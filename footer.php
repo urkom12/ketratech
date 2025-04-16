@@ -8,14 +8,32 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <h4>LEAVE YOUR MAIL AND STAY UP TO DATE!</h4>
-                <input type="email" class="footer-form-control my-3" placeholder="Enter your email">
-                <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="privacyPolicy">
-                    <label class="form-check-label" for="privacyPolicy">
-                    By checking the box, I agree to and accept the Privacy Policy and Terms of Service.
-                    </label>
+                <form id="subscribeForm">
+                    <?php
+                        if (!isset($_SESSION['csrf_token'])) {
+                            $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+                        }
+                    ?>
+                    <input type="email" name="email" id="emailInput" class="footer-form-control my-3" placeholder="Enter your email" required>
+                    <input type="hidden" name="csrf_token" id="csrfToken" value="<?php echo $_SESSION['csrf_token']; ?>">
+
+                    <div class="form-check mb-3">
+                        <input type="checkbox" name="privacy" class="form-check-input" id="privacyPolicy" required>
+                        <label class="form-check-label" for="privacyPolicy">
+                            By checking the box, I agree to and accept the Privacy Policy and Terms of Service.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Get updates</button>
+                </form>
+            </div>
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+                <div id="subscribeToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                    <div class="toast-body" id="toastMessage">Uspešno ste se pretplatili!</div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
                 </div>
-                <a href="/hire"><button class="btn btn-primary">Get updates</button></a>
             </div>
             <div class="col-md-3 mb-4">
                 <h4>COMPANY</h4>

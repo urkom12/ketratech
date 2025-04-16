@@ -103,3 +103,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function showToast(message, type = "success") {
+  const toastEl = document.getElementById("subscribeToast");
+  const toastBody = document.getElementById("toastMessage");
+
+  toastBody.textContent = message;
+  toastEl.classList.remove("text-bg-success", "text-bg-danger");
+  toastEl.classList.add(type === "success" ? "text-bg-success" : "text-bg-danger");
+
+  const toast = new bootstrap.Toast(toastEl);
+  toast.show();
+}
+
+document.getElementById("subscribeForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const email = document.getElementById("emailInput").value;
+  const privacyChecked = document.getElementById("privacyPolicy").checked;
+  const csrfToken = document.getElementById("csrfToken").value;
+
+  if (!privacyChecked) {
+    showToast("Morate prihvatiti uslove.", "danger");
+    return;
+  }
+
+  fetch("/inc/subscribe.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: `email=${encodeURIComponent(email)}&privacy=1&csrf_token=${encodeURIComponent(csrfToken)}`
+  })
+  .then(response => response.text())
+  .then(data => {
+    if (data.toLowerCase().includes("uspe")) {
+      showToast(data, "success");
+      document.getElementById("subscribeForm").reset();
+    } else {
+      showToast(data, "danger");
+    }
+  })
+  .catch(error => {
+    showToast("Došlo je do greške. Pokušajte ponovo.", "danger");
+    console.error(error);
+  });
+});
