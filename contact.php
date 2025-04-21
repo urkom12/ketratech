@@ -43,7 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 mysqli_close($conn);
 ?>
 
-<?php include_once 'header.php'; ?>
+<?php 
+$page_title = "KetraTech | Contact Us";
+$meta_description = "Get in touch with our team for custom web solutions. We’re here to turn your ideas into reality — let’s talk!";
+include_once('header.php'); 
+?>
 
 <div class="loader loader--active">
     <div class="loader__icon">

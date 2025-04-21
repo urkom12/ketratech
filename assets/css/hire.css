@@ -127,6 +127,29 @@
 }
 
 .hire-now-boxes .box1 img {
-  fill: white; /* ili crna, ili neka druga vrednost */
-  color: white; /* ako SVG koristi currentColor */
+  fill: white;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .hire-now-boxes {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hire-now-boxes {
+    padding-left:0rem;
+    padding-right:0rem;
+  }
+  .hire-now-boxes .box1 h4, .hire-now-boxes .box2 h4, .hire-now-boxes .box3 h4{
+    font-size: 1.2rem;
+  }
+  .box1 ul li, .box2 ul li, .box3 ul li {
+    font-size: 0.85rem;
+    padding-right:0.2rem;
+  }
+  .hire-now-buttons{
+    font-size: 0.85rem;
+    white-space:nowrap;
+  }
 }

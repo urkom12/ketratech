@@ -1,4 +1,8 @@
-<?php include_once('header.php')?>
+<?php 
+$page_title = "KetraTech | Careers";
+$meta_description = "Join a team of visionaries. Explore open roles and grow your career with KetraTech’s creative and tech-driven culture.";
+include_once('header.php'); 
+?>
 <div class="loader loader--active">
     <div class="loader__icon">
         <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">

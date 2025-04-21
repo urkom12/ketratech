@@ -124,7 +124,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function (e)
   const csrfToken = document.getElementById("csrfToken").value;
 
   if (!privacyChecked) {
-    showToast("Morate prihvatiti uslove.", "danger");
+    showToast("You must accept the terms.", "danger");
     return;
   }
 
@@ -137,7 +137,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function (e)
   })
   .then(response => response.text())
   .then(data => {
-    if (data.toLowerCase().includes("uspe")) {
+    if (data.toLowerCase().includes("success")) {
       showToast(data, "success");
       document.getElementById("subscribeForm").reset();
     } else {
@@ -145,7 +145,7 @@ document.getElementById("subscribeForm").addEventListener("submit", function (e)
     }
   })
   .catch(error => {
-    showToast("Došlo je do greške. Pokušajte ponovo.", "danger");
+    showToast("Error. Try again.", "danger");
     console.error(error);
   });
 });

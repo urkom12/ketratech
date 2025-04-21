@@ -444,13 +444,13 @@ h2{
 }
 
 .footer-section li{
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .footer-section a {
   color: #cfcfcf;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   text-transform: capitalize;
 }
 
@@ -468,20 +468,6 @@ h2{
 }
 
 @media (max-width: 768px) {
-  .footer-section .row {
-    flex-direction: column;
-  }
-
-  .footer-section .col-lg-3 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .footer-links {
-    flex: 1;
-    text-align: center;
-  }
-
   .footer-links ul {
     padding: 0;
   }
@@ -1343,10 +1329,6 @@ input[type="email"]:focus {
   background-color: #5a29e6;
 }
 
-.footer-section li{
-  font-size: 18px;
-}
-
 .footer-section a {
   color: #cfcfcf;
   text-decoration: none;
@@ -1367,7 +1349,7 @@ input[type="email"]:focus {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-section .row {
     flex-direction: column;
   }

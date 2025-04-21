@@ -1,29 +1,24 @@
 <?php
 session_start();
 
-// Povezivanje sa bazom
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "vczUAX]YN^em";
 $dbname = "ketratech";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    die("Konekcija nije uspela: " . $conn->connect_error);
+    die("Connection aborted: " . $conn->connect_error);
 }
 
-// Provera CSRF tokena
 if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
-    die("CSRF verifikacija nije uspela.");
+    die("CSRF verification failed.");
 }
 
-// Provera da li su postavljeni email i prihvatanje uslova
 if (isset($_POST['email']) && isset($_POST['privacy'])) {
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
 
-    // Provera validnosti email adrese
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Provera da li mejl već postoji u bazi
         $checkEmailQuery = "SELECT * FROM subscribers WHERE email = ?";
         $stmt = $conn->prepare($checkEmailQuery);
         $stmt->bind_param("s", $email);
@@ -31,7 +26,7 @@ if (isset($_POST['email']) && isset($_POST['privacy'])) {
         $stmt->store_result();
 
         if ($stmt->num_rows > 0) {
-            echo "Ovaj email je već prijavljen za obaveštenja.";
+            echo "This E-Mail address is already subscribed.";
         } else {
             $stmt->close();
 
@@ -40,18 +35,18 @@ if (isset($_POST['email']) && isset($_POST['privacy'])) {
             $stmt->bind_param("s", $email);
 
             if ($stmt->execute()) {
-                echo "Uspešno ste se prijavili za obaveštenja!";
+                echo "You have successfully subscribed for newsletter!";
             } else {
-                echo "Došlo je do greške prilikom prijave. Pokušajte ponovo.";
+                echo "Error. Try again.";
             }
         }
 
         $stmt->close();
     } else {
-        echo "Neispravna email adresa.";
+        echo "Incorrect E-Mail address.";
     }
 } else {
-    echo "Morate uneti email i prihvatiti uslove.";
+    echo "You must enter E-Mail address and accept the terms.";
 }
 
 $conn->close();
