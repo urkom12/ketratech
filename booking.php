@@ -44,7 +44,7 @@
 
                 <div class="timezone">
                     <select id="timezone" name="timezone">
-                        <option value="" disabled selected hidden>Choose your timezone</option>
+                        <option value="def" disabled selected hidden>Choose your timezone</option>
                         <option value="0" disabled></option>
                         <option value="(GMT -12:00)">(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="(GMT -11:00)">(GMT -11:00) Midway Island, Samoa</option>

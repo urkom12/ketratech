@@ -117,7 +117,9 @@ backToCalendarButton.addEventListener('click', () => {
 });
 
 toFormButton.addEventListener('click', () => {
-  if (!selectedDate || !timeInput.value || timezoneSelect.value === "0") {
+  const selectedOption = timezoneSelect.options[timezoneSelect.selectedIndex];
+
+  if (!selectedDate || !timeInput.value || selectedOption.disabled) {
     alert("Please select date, time and timezone.");
     return;
   }

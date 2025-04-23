@@ -467,6 +467,21 @@ h2{
   margin-bottom: 20px;
 }
 
+.hero-section {
+  height: 100vh;
+  background-color: transparent;
+}
+
+.hero-section h1 {
+  font-size: 4.5rem;
+  color: #A89CFD !important;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  color: #E9E9E9;
+}
+
 @media (max-width: 768px) {
   .footer-section .row {
     flex-direction: column;
@@ -504,27 +519,14 @@ h2{
   }
 
   .hero-section {
-    height: 60vh !important;
+    height: auto;
+    padding-top: 9rem;
+    padding-bottom: 1rem;
   }
 
   .price{
     font-size: 2.5rem !important;
   }
-}
-
-.hero-section {
-  height: 100vh;
-  background-color: transparent;
-}
-
-.hero-section h1 {
-  font-size: 4.5rem;
-  color: #A89CFD !important;
-}
-
-.hero-section p {
-  font-size: 1.3rem;
-  color: #E9E9E9;
 }
 
 @media (min-width: 768px) {
