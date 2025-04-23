@@ -30,7 +30,7 @@
             <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
                 <div id="subscribeToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
                     <div class="d-flex">
-                    <div class="toast-body" id="toastMessage">Uspešno ste se pretplatili!</div>
+                    <div class="toast-body" id="toastMessage">You have successfully subscribed for newsletter!</div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
                 </div>
@@ -49,10 +49,7 @@
                 <h4>CASE STUDIES</h4>
                 <br>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-muted">Coffee</a></li>
-                    <li><a href="#" class="text-muted">Spinner</a></li>
-                    <li><a href="#" class="text-muted">Inovatech</a></li>
-                    <li><a href="#" class="text-muted">View all</a></li>
+                    <li><a href="#" class="text-muted">Coming Soon</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4">
@@ -60,7 +57,7 @@
                 <br>
                 <ul class="list-unstyled">
                     <li class="text-muted">+381 65 123456</li>
-                    <li class="text-muted">support@ketratech.com</li>
+                    <li class="text-muted"><a href="mailto:support@ketratech.com" target="_blank" style="font-weight: 400; text-decoration: none; font-size: 17px; text-transform: unset;">support@ketratech.com</a></li>
                     <li class="text-muted">Ulica 3 - 26000 Pančevo, Serbia</li>
                 </ul>
             </div>
@@ -72,9 +69,9 @@
             </div>
             <div class="d-flex align-items-center padding-right1">
                 <a href="https://www.facebook.com/" class="mx-2" target="_blank"><img src="img/face.svg" alt="Facebook" style="width: 45px;"></a>
-                <a href="https://x.com/" class="mx-2" target="_blank"><img src="img/x.svg" alt="X" style="width: 45px;"></a>
-                <a href="https://www.instagram.com/" class="mx-2" target="_blank"><img src="img/insta.svg" alt="Instagram" style="width: 45px;"></a>
-                <a href="https://www.tiktok.com/" class="mx-2" target="_blank"><img src="img/tiktok.svg" alt="TikTok" style="width: 45px;"></a>
+                <a href="https://x.com/KetraTech" class="mx-2" target="_blank"><img src="img/x.svg" alt="X" style="width: 45px;"></a>
+                <a href="https://www.instagram.com/ketra.tech/" class="mx-2" target="_blank"><img src="img/insta.svg" alt="Instagram" style="width: 45px;"></a>
+                <a href="https://www.tiktok.com/@ketratech" class="mx-2" target="_blank"><img src="img/tiktok.svg" alt="TikTok" style="width: 45px;"></a>
             </div>
         </div>
         <br><br>
@@ -84,9 +81,9 @@
                 <p class="mb-0" style="color: #A89CFD;"><i class="bi bi-c-circle"></i>Copyright Ketra Tech 2024</p>
             </div>
             <div class="mt-3 mt-md-0">
-                <a href="#" class="text-muted me-3">Terms of Service</a>
-                <a href="#" class="text-muted me-3">Privacy policy</a>
-                <a href="#" class="text-muted">Cookie policy</a>
+                <a href="/tos" class="text-muted me-3">Terms of Service</a>
+                <a href="/privacy-policy" class="text-muted me-3">Privacy policy</a>
+                <a href="/cookies" class="text-muted">Cookie policy</a>
             </div>
         </div>
     </div>

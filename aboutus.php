@@ -1,4 +1,8 @@
-<?php include_once('header.php'); ?>
+<?php 
+$page_title = "KetraTech | About Us";
+$meta_description = "Meet the minds behind KetraTech. Discover our mission, values, and the passion that drives our digital creations.";
+include_once('header.php'); 
+?>
 
 <div class="loader loader--active">
     <div class="loader__icon">
@@ -184,7 +188,7 @@
 <section class="centered-section">
     <h1>Behind every great project is <br><span>a truly dedicated team</span></h1>
     <p>At Ketra Tech, our experts combine creativity, technical - <br>expertise, and a passion to deliver succsessful solutions.</p>
-    <a href="index.html"><button class="btn btn-schedule">See our work</button></a>
+    <a href="/"><button class="btn btn-schedule">See our work</button></a>
 </section>
 
 <?php include_once('footer.php'); ?>
