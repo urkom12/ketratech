@@ -75,14 +75,14 @@
             </div>
         </div>
         <br><br>
-        <hr class="divider">
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
-            <div class="d-flex align-items-center">
+        <hr class="divider-margin divider">
+        <div class="copyright-section d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+            <div class="copyright-text d-flex align-items-center">
                 <p class="mb-0" style="color: #A89CFD;"><i class="bi bi-c-circle"></i>Copyright Ketra Tech 2024</p>
             </div>
-            <div class="mt-3 mt-md-0">
-                <a href="/tos" class="text-muted me-3">Terms of Service</a>
-                <a href="/privacy-policy" class="text-muted me-3">Privacy policy</a>
+            <div class="policy-links mt-3 mt-md-0">
+                <a href="/tos" class="text-muted">Terms of Service</a>
+                <a href="/privacy-policy" class="text-muted">Privacy policy</a>
                 <a href="/cookies" class="text-muted">Cookie policy</a>
             </div>
         </div>

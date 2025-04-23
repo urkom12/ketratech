@@ -605,7 +605,7 @@ h2{
 .team-section-about {
   background-color: transparent;
   color: #ffffff;
-  padding: 100px 15px;
+  padding: 100px 15px 0 15px;
   text-align: left;
 }
 
@@ -645,6 +645,12 @@ h2{
   color: #A89CFD;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .custom-section {
+    padding: 60px 20px 0 20px !important;
+  }
 }
 
 .btn-custom {
@@ -1385,4 +1391,26 @@ input[type="email"]:focus {
 }
 .padding-right1{
   padding-right: 1rem;
+}
+
+.policy-links a{
+  margin-right: 1rem;
+}
+
+@media (max-width: 767px) {
+  .policy-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .copyright-section{
+    flex-direction: column-reverse !important;
+    margin-top: 0 !important;
+  }
+  .copyright-text{
+    margin-top: 2rem;
+  }
+  .divider-margin{
+    margin-bottom: 2rem !important;
+  }
 }
