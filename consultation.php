@@ -50,7 +50,7 @@
                         <small class="error-text" id="phone-error"></small>
                     </div>
                     <div class="form-buttons">
-                        <button type="button">Cancel</button>
+                        <button type="button" id="back-step-1">Cancel</button>
                         <button type="button" id="next-step-1">Next</button>
                     </div>
                 </div>
@@ -78,10 +78,9 @@
                     <div class="form-group">
                         <label for="additional">Additional information</label>
                         <textarea id="additional" name="additional" placeholder="Any additional information..." rows="4"></textarea>
-                        <small class="error-text" id="additional-error"></small>
                     </div>
                     <div class="form-buttons">
-                        <button type="button" onclick="history.back()">Cancel</button>
+                        <button type="button" id="back-step-2">Back</button>
                         <button type="button" id="next-step-2">Next</button>
                     </div>
                 </div>
@@ -107,67 +106,81 @@
                                 </div>
                                 <div id="calendar-dates"></div>
                             </div>
+                            <small class="error-text" id="calendar-error"></small>
                         </div>
                         <div class="d-flex flex-column">
                             <div class="form-group">
-                                <label for="hour">Hour</label>
+                                <label for="hour">Choose time</label>
                                 <select id="hour" name="hour">
+                                    <option value="" disabled selected>Select a time</option>
                                     <option value="1">1</option>
+                                    <option value="1:30">1:30</option>
                                     <option value="2">2</option>
+                                    <option value="2:30">2:30</option>
                                     <option value="3">3</option>
+                                    <option value="3:30">3:30</option>
                                     <option value="4">4</option>
+                                    <option value="4:30">4:30</option>
                                     <option value="5">5</option>
+                                    <option value="5:30">5:30</option>
                                     <option value="6">6</option>
+                                    <option value="6:30">6:30</option>
                                     <option value="7">7</option>
+                                    <option value="7:30">7:30</option>
                                     <option value="8">8</option>
+                                    <option value="8:30">8:30</option>
                                     <option value="9">9</option>
+                                    <option value="9:30">9:30</option>
                                     <option value="10">10</option>
+                                    <option value="10:30">10:30</option>
                                     <option value="11">11</option>
+                                    <option value="11:30">11:30</option>
                                     <option value="12">12</option>
+                                    <option value="12:30">12:30</option>
                                 </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="am-pm">AM/PM</label>
                                 <select id="am-pm" name="am-pm">
                                     <option value="AM">AM</option>
                                     <option value="PM">PM</option>
                                 </select>
                             </div>
+                            <small class="error-text" id="hour-error" style="margin-left: 2rem;"></small>
                             <div class="form-group">
-                                <label for="timezone">Timezone</label>
+                                <label for="timezone">Choose timezone</label>
                                 <select id="timezone" name="timezone">
-                                    <option value="UTC-12:00">UTC-12:00</option>
-                                    <option value="UTC-11:00">UTC-11:00</option>
-                                    <option value="UTC-10:00">UTC-10:00</option>
-                                    <option value="UTC-09:00">UTC-09:00</option>
-                                    <option value="UTC-08:00">UTC-08:00</option>
-                                    <option value="UTC-07:00">UTC-07:00</option>
-                                    <option value="UTC-06:00">UTC-06:00</option>
-                                    <option value="UTC-05:00">UTC-05:00</option>
-                                    <option value="UTC-04:00">UTC-04:00</option>
-                                    <option value="UTC-03:00">UTC-03:00</option>
-                                    <option value="UTC-02:00">UTC-02:00</option>
-                                    <option value="UTC-01:00">UTC-01:00</option>
-                                    <option value="UTC+00:00">UTC+00:00</option>
-                                    <option value="UTC+01:00">UTC+01:00</option>
-                                    <option value="UTC+02:00">UTC+02:00</option>
-                                    <option value="UTC+03:00">UTC+03:00</option>
-                                    <option value="UTC+04:00">UTC+04:00</option>
-                                    <option value="UTC+05:00">UTC+05:00</option>
-                                    <option value="UTC+06:00">UTC+06:00</option>
-                                    <option value="UTC+07:00">UTC+07:00</option>
-                                    <option value="UTC+08:00">UTC+08:00</option>
-                                    <option value="UTC+09:00">UTC+09:00</option>
-                                    <option value="UTC+10:00">UTC+10:00</option>
-                                    <option value="UTC+11:00">UTC+11:00</option>
-                                    <option value="UTC+12:00">UTC+12:00</option>
+                                    <option value="" disabled selected>Select a timezone</option>
+                                    <option value="UTC-12:00">UTC-12:00 (International Date Line West)</option>
+                                    <option value="UTC-11:00">UTC-11:00 (Samoa Time)</option>
+                                    <option value="UTC-10:00">UTC-10:00 (Hawaii-Aleutian Standard Time)</option>
+                                    <option value="UTC-09:00">UTC-09:00 (Alaska Standard Time)</option>
+                                    <option value="UTC-08:00">UTC-08:00 (Pacific Standard Time)</option>
+                                    <option value="UTC-07:00">UTC-07:00 (Mountain Standard Time)</option>
+                                    <option value="UTC-06:00">UTC-06:00 (Central Standard Time)</option>
+                                    <option value="UTC-05:00">UTC-05:00 (Eastern Standard Time)</option>
+                                    <option value="UTC-04:00">UTC-04:00 (Atlantic Standard Time)</option>
+                                    <option value="UTC-03:00">UTC-03:00 (Argentina Time)</option>
+                                    <option value="UTC-02:00">UTC-02:00 (Mid-Atlantic Time)</option>
+                                    <option value="UTC-01:00">UTC-01:00 (Azores Standard Time)</option>
+                                    <option value="UTC+00:00">UTC+00:00 (Greenwich Mean Time)</option>
+                                    <option value="UTC+01:00">UTC+01:00 (Central European Time)</option>
+                                    <option value="UTC+02:00">UTC+02:00 (Eastern European Time)</option>
+                                    <option value="UTC+03:00">UTC+03:00 (Moscow Time)</option>
+                                    <option value="UTC+04:00">UTC+04:00 (Azerbaijan Time)</option>
+                                    <option value="UTC+05:00">UTC+05:00 (Pakistan Standard Time)</option>
+                                    <option value="UTC+06:00">UTC+06:00 (Bangladesh Standard Time)</option>
+                                    <option value="UTC+07:00">UTC+07:00 (Indochina Time)</option>
+                                    <option value="UTC+08:00">UTC+08:00 (China Standard Time)</option>
+                                    <option value="UTC+09:00">UTC+09:00 (Japan Standard Time)</option>
+                                    <option value="UTC+10:00">UTC+10:00 (Australian Eastern Standard Time)</option>
+                                    <option value="UTC+11:00">UTC+11:00 (Solomon Islands Time)</option>
+                                    <option value="UTC+12:00">UTC+12:00 (New Zealand Standard Time)</option>
                                 </select>
+                                <small class="error-text" id="timezone-error"></small>
                             </div>
                         </div>
                     </div>
                     <div class="form-buttons">
-                        <button type="button" onclick="previousStep()">Back</button>
-                        <button type="submit">Submit</button>
+                        <button type="button" id="back-step-3">Back</button>
+                        <button type="submit" id="submitForm">Submit</button>
                     </div>
                 </div>
             </form>

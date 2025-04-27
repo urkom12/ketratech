@@ -300,6 +300,15 @@ select option[disabled] {
     background-color: #8145c3;
     color: white;
 }
+
+#hour {
+    max-width: 24.75rem;
+}
+
+#am-pm {
+    max-width: 5rem;
+}
+
 @media (max-width: 480px) {
     .container {
         --bs-gutter-x: 0rem;
