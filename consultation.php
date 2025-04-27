@@ -49,7 +49,7 @@
                     <small class="error-text" id="phone-error"></small>
                 </div>
                 <div class="form-buttons">
-                    <button type="button" onclick="history.back()">Cancel</button>
+                    <button type="button">Cancel</button>
                     <button type="button" id="next-step-1">Next</button>
                 </div>
             </form>

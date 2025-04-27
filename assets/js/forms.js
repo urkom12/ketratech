@@ -7,168 +7,167 @@ document.addEventListener("DOMContentLoaded", function () {
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
         });
     }
-});
-  
 
-document.querySelectorAll('.error-text').forEach(el => {
-    el.textContent = '';
-    el.style.display = 'none';
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("#step-1");
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        
-        document.querySelectorAll('.error-text').forEach(el => {
+    function clearErrors(scope = document) {
+        scope.querySelectorAll('.error-text').forEach(el => {
             el.textContent = '';
             el.style.display = 'none';
         });
-    
-        let isValid = true;
-    
-        const name = document.querySelector("#name").value.trim();
-        const email = document.querySelector("#email").value.trim();
-        const phone = document.querySelector("#phone").value.trim();
-    
-        if (!name) {
-            const err = document.querySelector("#name-error");
-            err.textContent = "Name is required.";
-            err.style.display = "block";
-            isValid = false;
-        }
-    
-        if (!email || !email.includes("@")) {
-            const err = document.querySelector("#email-error");
-            err.textContent = "Email invalid.";
-            err.style.display = "block";
-            isValid = false;
-        }
-    
-        const phoneRegex = /^\+[0-9]+$/;
-        if (!phone || !phoneRegex.test(phone)) {
-            const err = document.querySelector("#phone-error");
-            err.textContent = "Phone number invalid.";
-            err.style.display = "block";
-            isValid = false;
-        }
-    
-        if (isValid) {
-            form.submit();
-        }
-    });
-});
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#next-step-1").addEventListener("click", function () {
-        document.querySelector("#step-1").style.display = "none";
-        document.querySelector("#step-2").style.display = "block";
-    });
-  
-    const step2Form = document.querySelector("#step-2");
-    step2Form.addEventListener("submit", function (event) {
-        event.preventDefault();
-    
-        step2Form.querySelectorAll('.error-text').forEach(el => {
-            el.textContent = "";
-            el.style.display = "none";
+    clearErrors();
+
+    const step1Form = document.querySelector("#step-1");
+    if (step1Form) {
+        step1Form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            clearErrors();
+
+            let isValid = true;
+
+            const name = document.querySelector("#name").value.trim();
+            const email = document.querySelector("#email").value.trim();
+            const phone = document.querySelector("#phone").value.trim();
+
+            if (!name) {
+                const err = document.querySelector("#name-error");
+                err.textContent = "Name is required.";
+                err.style.display = "block";
+                isValid = false;
+            }
+
+            if (!email || !email.includes("@")) {
+                const err = document.querySelector("#email-error");
+                err.textContent = "Email invalid.";
+                err.style.display = "block";
+                isValid = false;
+            }
+
+            const phoneRegex = /^\+[0-9]+$/;
+            if (!phone || !phoneRegex.test(phone)) {
+                const err = document.querySelector("#phone-error");
+                err.textContent = "Phone number invalid.";
+                err.style.display = "block";
+                isValid = false;
+            }
+
+            if (isValid) {
+                step1Form.submit();
+            }
         });
-    
-        let isValid = true;
-    
-        const type1 = document.querySelector("#type1").value;
-        const type2 = document.querySelector("#type2").value;
-        const comments = document.querySelector("#additional").value.trim();
-    
-        if (!type1) {
-            const err = document.querySelector("#type1-error");
-            err.textContent = "Please choose.";
-            err.style.display = "block";
-            isValid = false;
-        }
-    
-        if (!type2) {
-            const err = document.querySelector("#type2-error");
-            err.textContent = "Please choose.";
-            err.style.display = "block";
-            isValid = false;
-        }
-    
-        if (isValid) {
-            step2Form.submit();
-        }
-    });
-});
+    }
 
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector("#next-step-2").addEventListener("click", function () {
-        document.querySelector("#step-2").style.display = "none";
-        document.querySelector("#step-3").style.display = "flex";
-    });
-});
-  
-document.addEventListener("DOMContentLoaded", function () {
+    const nextStep1Btn = document.querySelector("#next-step-1");
+    if (nextStep1Btn) {
+        nextStep1Btn.addEventListener("click", function () {
+            document.querySelector("#step-1").style.display = "none";
+            document.querySelector("#step-2").style.display = "block";
+        });
+    }
+
+    const step2Form = document.querySelector("#step-2");
+    if (step2Form) {
+        step2Form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            clearErrors(step2Form);
+
+            let isValid = true;
+
+            const type1 = document.querySelector("#type1").value;
+            const type2 = document.querySelector("#type2").value;
+
+            if (!type1) {
+                const err = document.querySelector("#type1-error");
+                err.textContent = "Please choose.";
+                err.style.display = "block";
+                isValid = false;
+            }
+
+            if (!type2) {
+                const err = document.querySelector("#type2-error");
+                err.textContent = "Please choose.";
+                err.style.display = "block";
+                isValid = false;
+            }
+
+            if (isValid) {
+                step2Form.submit();
+            }
+        });
+    }
+
+    const nextStep2Btn = document.querySelector("#next-step-2");
+    if (nextStep2Btn) {
+        nextStep2Btn.addEventListener("click", function () {
+            document.querySelector("#step-2").style.display = "none";
+            document.querySelector("#step-3").style.display = "flex";
+        });
+    }
+
     const calendarDates = document.getElementById("calendar-dates");
     const monthYear = document.getElementById("month-year");
     const nextMonthBtn = document.getElementById("next-month");
     const prevMonthBtn = document.getElementById("prev-month");
 
-    let currentDate = new Date();
+    if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn) {
+        let currentDate = new Date();
 
-    function renderCalendar(date) {
-        const year = date.getFullYear();
-        const month = date.getMonth();
-        const today = new Date();
+        function renderCalendar(date) {
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            const today = new Date();
+            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
-        const firstDay = new Date(year, month, 1).getDay();
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-        let startDay = firstDay === 0 ? 6 : firstDay - 1;
+            let startDay = firstDay === 0 ? 6 : firstDay - 1;
 
-        calendarDates.innerHTML = "";
-        monthYear.textContent = date.toLocaleString("default", { month: "long", year: "numeric" });
+            calendarDates.innerHTML = "";
+            monthYear.textContent = date.toLocaleString("default", { month: "long", year: "numeric" });
 
-        for (let i = 0; i < startDay; i++) {
-            const emptyDiv = document.createElement("div");
-            calendarDates.appendChild(emptyDiv);
-        }
-
-        for (let day = 1; day <= daysInMonth; day++) {
-            const dateEl = document.createElement("div");
-            dateEl.classList.add("date");
-
-            const thisDate = new Date(year, month, day);
-
-            if (thisDate < today.setHours(0,0,0,0)) {
-                dateEl.classList.add("disabled");
-            } else {
-                dateEl.classList.add("enabled");
-                dateEl.addEventListener("click", function () {
-                    document.querySelectorAll(".date").forEach(d => d.classList.remove("selected"));
-                    this.classList.add("selected");
-                });
+            for (let i = 0; i < startDay; i++) {
+                const emptyDiv = document.createElement("div");
+                calendarDates.appendChild(emptyDiv);
             }
 
-            dateEl.textContent = day;
-            calendarDates.appendChild(dateEl);
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateEl = document.createElement("div");
+                dateEl.classList.add("date");
+
+                const thisDate = new Date(year, month, day);
+
+                if (thisDate < todayMidnight) {
+                    dateEl.classList.add("disabled");
+                } else {
+                    dateEl.classList.add("enabled");
+                    dateEl.addEventListener("click", function () {
+                        document.querySelectorAll(".date").forEach(d => d.classList.remove("selected"));
+                        this.classList.add("selected");
+                    });
+                }
+
+                dateEl.textContent = day;
+                calendarDates.appendChild(dateEl);
+            }
+
+            if (year === today.getFullYear() && month === today.getMonth()) {
+                prevMonthBtn.disabled = true;
+            } else {
+                prevMonthBtn.disabled = false;
+            }
         }
 
-        if (year === today.getFullYear() && month === today.getMonth()) {
-            prevMonthBtn.disabled = true;
-        } else {
-            prevMonthBtn.disabled = false;
-        }
+        nextMonthBtn.addEventListener("click", function () {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar(currentDate);
+        });
+
+        prevMonthBtn.addEventListener("click", function () {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar(currentDate);
+        });
+
+        renderCalendar(currentDate);
     }
-
-    nextMonthBtn.addEventListener("click", function () {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        renderCalendar(currentDate);
-    });
-
-    prevMonthBtn.addEventListener("click", function () {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        renderCalendar(currentDate);
-    });
-
-    renderCalendar(currentDate);
 });
