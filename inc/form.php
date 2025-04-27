@@ -6,22 +6,29 @@ use Dotenv\Dotenv;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $mail = new PHPMailer(true);
 
 try {
-    $firstName = $_POST['first-name'] ?? '';
-    $lastName = $_POST['last-name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $company = $_POST['company'] ?? '';
-    $message = $_POST['additional-message'] ?? '';
-
-    $selectedDate = $_POST['selected-date'] ?? '';
-    $selectedTime = $_POST['selected-time'] ?? '';
-    $selectedTimezone = $_POST['selected-timezone'] ?? '';
-    $selectedType = $_POST['selected-type'] ?? '';
+    $firstName        = $_POST['name']             ?? '';
+    $lastName         = '';
+    $email            = $_POST['email']            ?? '';
+    $phone            = $_POST['phone']            ?? '';
+    $companyType      = $_POST['type1']            ?? '';
+    $consultationType = $_POST['type2']            ?? '';
+    $message          = $_POST['additional']       ?? '';
+    
+    $selectedDate     = $_POST['selected-date']     ?? '';
+    $hour             = $_POST['hour']              ?? '';
+    $amPm             = $_POST['am-pm']             ?? '';
+    $selectedTime     = trim($hour . ' ' . $amPm);
+    $selectedTimezone = $_POST['timezone']          ?? '';
 
     $mail->isSMTP();
     $mail->Host = 'localhost';
@@ -30,9 +37,7 @@ try {
     $mail->SMTPSecure = false;
 
     $mail->setFrom('bookings@ketratech.net', 'KetraTech');
-
     $mail->addAddress('support@ketratech.net');
-
     $mail->addReplyTo($email, "$firstName $lastName");
 
     $mail->isHTML(true);
@@ -42,21 +47,25 @@ try {
         <h2>New Booking Submission</h2>
         <p><strong>Name:</strong> {$firstName} {$lastName}</p>
         <p><strong>Email:</strong> {$email}</p>
-        <p><strong>Company:</strong> {$company}</p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Company/Type:</strong> {$companyType}</p>
+        <p><strong>Consultation Type:</strong> {$consultationType}</p>
         <p><strong>Message:</strong> {$message}</p>
         <p><strong>Date:</strong> {$selectedDate}</p>
         <p><strong>Time:</strong> {$selectedTime}</p>
         <p><strong>Timezone:</strong> {$selectedTimezone}</p>
-        <p><strong>Appointment ID:</strong> {$selectedType}</p>
     ";
 
-    $mail->AltBody = "New booking from $firstName $lastName - Email: $email";
+    $mail->AltBody = "New booking from $firstName $lastName - Email: $email - Phone: $phone";
 
     $mail->send();
-
     header('Location: /thank-you');
     exit;
 } catch (Exception $e) {
-    header('Location: /error-page');
+    echo '<h1>Mail Error</h1>';
+    echo '<p>' . htmlspecialchars($mail->ErrorInfo) . '</p>';
+    echo '<pre>' . htmlspecialchars($e->getMessage()) . '</pre>';
+    error_log('PHPMailer Error: ' . $mail->ErrorInfo);
+    error_log('Exception: ' . $e->getMessage());
     exit;
 }

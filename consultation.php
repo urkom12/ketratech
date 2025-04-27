@@ -32,11 +32,11 @@
             <h2 class="font-medium text-3xl">Get Expert Consultation for Your Next Move!</h2>
             <p>Need guidance? Our experts are here to help. Schedule a consultation and let’s bring your ideas to life!</p>
 
-            <form action="#" method="post">
+            <form action="/inc/form.php" method="post">
                 <div class="form-step" id="step-1">
                     <div class="form-group">
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="firstname" name="name">
                         <small class="error-text" id="name-error"></small>
                     </div>
                     <div class="form-group">
@@ -92,9 +92,9 @@
                             <label>Select a date</label>
                             <div id="calendar-wrapper">
                                 <div id="calendar-header">
-                                    <button id="prev-month" disabled>&lt;</button>
+                                    <button type="button" id="prev-month" disabled>&lt;</button>
                                     <span id="month-year"></span>
-                                    <button id="next-month">&gt;</button>
+                                    <button type="button" id="next-month">&gt;</button>
                                 </div>
                                 <div id="calendar-days">
                                     <div>Mo</div>

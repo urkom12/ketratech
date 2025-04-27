@@ -18,18 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     clearErrors();
 
     const step1Form = document.querySelector("#step-1");
-    if (step1Form) {
-        step1Form.addEventListener("submit", function (event) {
+    const step1Btn = document.querySelector("#next-step-1");
+    const nextStep1Btn = document.querySelector("#next-step-1");
+
+    if (step1Form && step1Btn) {
+        step1Btn.addEventListener("click", function (event) {
             event.preventDefault();
             clearErrors();
 
             let isValid = true;
 
-            const name = document.querySelector("#name").value.trim();
+            const name = document.querySelector("#firstname").value.trim();
             const email = document.querySelector("#email").value.trim();
             const phone = document.querySelector("#phone").value.trim();
-
-            if (!name) {
+            if (!name || name.length < 3) {
                 const err = document.querySelector("#name-error");
                 err.textContent = "Name is required.";
                 err.style.display = "block";
@@ -52,22 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             if (isValid) {
-                step1Form.submit();
+                if (nextStep1Btn) {
+                    document.querySelector("#step-1").style.display = "none";
+                    document.querySelector("#step-2").style.display = "block";
+                }
             }
         });
     }
 
-    const nextStep1Btn = document.querySelector("#next-step-1");
-    if (nextStep1Btn) {
-        nextStep1Btn.addEventListener("click", function () {
-            document.querySelector("#step-1").style.display = "none";
-            document.querySelector("#step-2").style.display = "block";
-        });
-    }
-
     const step2Form = document.querySelector("#step-2");
-    if (step2Form) {
-        step2Form.addEventListener("submit", function (event) {
+    const nextStep2Btn = document.querySelector("#next-step-2");
+
+    if (step2Form && nextStep2Btn) {
+        nextStep2Btn.addEventListener("click", function (event) {
             event.preventDefault();
             clearErrors(step2Form);
 
@@ -89,18 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 err.style.display = "block";
                 isValid = false;
             }
-
             if (isValid) {
-                step2Form.submit();
+                if (nextStep2Btn) {
+                    document.querySelector("#step-2").style.display = "none";
+                    document.querySelector("#step-3").style.display = "block";
+                }
             }
-        });
-    }
-
-    const nextStep2Btn = document.querySelector("#next-step-2");
-    if (nextStep2Btn) {
-        nextStep2Btn.addEventListener("click", function () {
-            document.querySelector("#step-2").style.display = "none";
-            document.querySelector("#step-3").style.display = "flex";
         });
     }
 
