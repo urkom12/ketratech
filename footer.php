@@ -78,7 +78,7 @@
         <hr class="divider-margin divider">
         <div class="copyright-section d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
             <div class="copyright-text d-flex align-items-center">
-                <p class="mb-0" style="color: #A89CFD;"><i class="bi bi-c-circle"></i>Copyright Ketra Tech 2024</p>
+                <p class="mb-0" style="color: #A89CFD;"><i class="bi bi-c-circle"></i>Copyright Ketra Tech® 2025</p>
             </div>
             <div class="policy-links mt-3 mt-md-0">
                 <a href="/tos" class="text-muted">Terms of Service</a>
