@@ -1,22 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KetraTech</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"/>
+  <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/forms.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <div class="videol">
-                <video autoplay muted loop playsinline preload="auto" disablePictureInPicture> 
-                    <source src="img/gradient.mp4" type="video/mp4">
-                    <source src="img/gradient.webm" type="video/webm">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+    <div class="videol">
+        <video autoplay muted loop playsinline preload="auto" disablePictureInPicture> 
+            <source src="img/gradient.mp4" type="video/mp4">
+            <source src="img/gradient.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container d-flex bigbox">
+        <div class="left col-md-6">
             <div class="main">
-                <h1 class="text-4xl md:text-6xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500 bg-opacity-50">Start Your Consultation!</h1>
+                <h1>Start Your Consultation!</h1>
                 <ul class="check-list">
                     <li>We build a comprehensive solution strategy</li>
                     <li>We plan, staff, deliver, and manage technology projects and programs across several technical domains</li>
@@ -24,7 +27,7 @@
                 </ul>
             </div>
         </div>
-        <div class="right">
+        <div class="right col-md-6">
             <img src="img/logo-loading.png" alt="Logo" class="logo">
             <h2 class="font-medium text-3xl">Get Expert Consultation for Your Next Move!</h2>
             <p>Need guidance? Our experts are here to help. Schedule a consultation and let’s bring your ideas to life!</p>
@@ -51,7 +54,7 @@
                 </div>
             </form>
 
-            <form action="#" method="post" class="form-step" id="step-2" style="display: none;">
+            <form action="#" method="post" class="form-step" id="step-2" style="display: none !important;">
                 <div class="form-group">
                 <label for="type1">Are you an individual or a company?</label>
                     <select id="type1" name="type1">
@@ -82,80 +85,84 @@
                 </div>
             </form>
 
-            <form id="step-3" class="form-step" style="display: none;">
-                <div class="form-group">
-                    <label>Select a date</label>
-                    <div id="calendar-wrapper">
-                        <div id="calendar-header">
-                            <button id="prev-month" disabled>&lt;</button>
-                            <span id="month-year"></span>
-                            <button id="next-month">&gt;</button>
+            <form id="step-3" class="form-step d-flex flex-column" style="display: none !important;">
+                <div class="d-flex flex-row">
+                    <div class="form-group">
+                        <label>Select a date</label>
+                        <div id="calendar-wrapper">
+                            <div id="calendar-header">
+                                <button id="prev-month" disabled>&lt;</button>
+                                <span id="month-year"></span>
+                                <button id="next-month">&gt;</button>
+                            </div>
+                            <div id="calendar-days">
+                                <div>Mo</div>
+                                <div>Tu</div>
+                                <div>We</div>
+                                <div>Th</div>
+                                <div>Fr</div>
+                                <div>Sa</div>
+                                <div>Su</div>
+                            </div>
+                            <div id="calendar-dates"></div>
                         </div>
-                        <div id="calendar-days">
-                            <div>Mo</div>
-                            <div>Tu</div>
-                            <div>We</div>
-                            <div>Th</div>
-                            <div>Fr</div>
-                            <div>Sa</div>
-                            <div>Su</div>
-                        </div>
-                        <div id="calendar-dates"></div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="hour">Hour</label>
-                    <select id="hour" name="hour">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="am-pm">AM/PM</label>
-                    <select id="am-pm" name="am-pm">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="timezone">Timezone</label>
-                    <select id="timezone" name="timezone">
-                        <option value="UTC-12:00">UTC-12:00</option>
-                        <option value="UTC-11:00">UTC-11:00</option>
-                        <option value="UTC-10:00">UTC-10:00</option>
-                        <option value="UTC-09:00">UTC-09:00</option>
-                        <option value="UTC-08:00">UTC-08:00</option>
-                        <option value="UTC-07:00">UTC-07:00</option>
-                        <option value="UTC-06:00">UTC-06:00</option>
-                        <option value="UTC-05:00">UTC-05:00</option>
-                        <option value="UTC-04:00">UTC-04:00</option>
-                        <option value="UTC-03:00">UTC-03:00</option>
-                        <option value="UTC-02:00">UTC-02:00</option>
-                        <option value="UTC-01:00">UTC-01:00</option>
-                        <option value="UTC+00:00">UTC+00:00</option>
-                        <option value="UTC+01:00">UTC+01:00</option>
-                        <option value="UTC+02:00">UTC+02:00</option>
-                        <option value="UTC+03:00">UTC+03:00</option>
-                        <option value="UTC+04:00">UTC+04:00</option>
-                        <option value="UTC+05:00">UTC+05:00</option>
-                        <option value="UTC+06:00">UTC+06:00</option>
-                        <option value="UTC+07:00">UTC+07:00</option>
-                        <option value="UTC+08:00">UTC+08:00</option>
-                        <option value="UTC+09:00">UTC+09:00</option>
-                        <option value="UTC+10:00">UTC+10:00</option>
-                        <option value="UTC+11:00">UTC+11:00</option>
-                        <option value="UTC+12:00">UTC+12:00</option>
-                    </select>
+                    <div class="d-flex flex-column">
+                        <div class="form-group">
+                            <label for="hour">Hour</label>
+                            <select id="hour" name="hour">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="am-pm">AM/PM</label>
+                            <select id="am-pm" name="am-pm">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timezone">Timezone</label>
+                            <select id="timezone" name="timezone">
+                                <option value="UTC-12:00">UTC-12:00</option>
+                                <option value="UTC-11:00">UTC-11:00</option>
+                                <option value="UTC-10:00">UTC-10:00</option>
+                                <option value="UTC-09:00">UTC-09:00</option>
+                                <option value="UTC-08:00">UTC-08:00</option>
+                                <option value="UTC-07:00">UTC-07:00</option>
+                                <option value="UTC-06:00">UTC-06:00</option>
+                                <option value="UTC-05:00">UTC-05:00</option>
+                                <option value="UTC-04:00">UTC-04:00</option>
+                                <option value="UTC-03:00">UTC-03:00</option>
+                                <option value="UTC-02:00">UTC-02:00</option>
+                                <option value="UTC-01:00">UTC-01:00</option>
+                                <option value="UTC+00:00">UTC+00:00</option>
+                                <option value="UTC+01:00">UTC+01:00</option>
+                                <option value="UTC+02:00">UTC+02:00</option>
+                                <option value="UTC+03:00">UTC+03:00</option>
+                                <option value="UTC+04:00">UTC+04:00</option>
+                                <option value="UTC+05:00">UTC+05:00</option>
+                                <option value="UTC+06:00">UTC+06:00</option>
+                                <option value="UTC+07:00">UTC+07:00</option>
+                                <option value="UTC+08:00">UTC+08:00</option>
+                                <option value="UTC+09:00">UTC+09:00</option>
+                                <option value="UTC+10:00">UTC+10:00</option>
+                                <option value="UTC+11:00">UTC+11:00</option>
+                                <option value="UTC+12:00">UTC+12:00</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-buttons">
                     <button type="button" onclick="previousStep()">Back</button>
@@ -166,4 +173,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="/assets/js/forms.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
 </body>
+
+</html>

@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#next-step-2").addEventListener("click", function () {
         document.querySelector("#step-2").style.display = "none";
-        document.querySelector("#step-3").style.display = "block";
+        document.querySelector("#step-3").style.display = "flex";
     });
 });
   
@@ -120,16 +120,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const month = date.getMonth();
         const today = new Date();
 
-        const firstDay = new Date(year, month, 1).getDay(); // day of week (0 = Sunday)
+        const firstDay = new Date(year, month, 1).getDay();
         const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-        // Prilagođavamo da nedelja bude poslednji dan, a ponedeljak prvi
         let startDay = firstDay === 0 ? 6 : firstDay - 1;
 
         calendarDates.innerHTML = "";
         monthYear.textContent = date.toLocaleString("default", { month: "long", year: "numeric" });
 
-        // Prazna polja za dane pre 1. u mesecu
         for (let i = 0; i < startDay; i++) {
             const emptyDiv = document.createElement("div");
             calendarDates.appendChild(emptyDiv);
@@ -146,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 dateEl.classList.add("enabled");
                 dateEl.addEventListener("click", function () {
-                    // Skini prethodnu selekciju
                     document.querySelectorAll(".date").forEach(d => d.classList.remove("selected"));
                     this.classList.add("selected");
                 });
@@ -156,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
             calendarDates.appendChild(dateEl);
         }
 
-        // Disable previous month button
         if (year === today.getFullYear() && month === today.getMonth()) {
             prevMonthBtn.disabled = true;
         } else {
