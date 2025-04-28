@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KetraTech</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/forms.css">
 </head>
@@ -19,7 +20,7 @@
     <div class="container d-flex bigbox">
         <div class="left col-md-6">
             <div class="main">
-                <h1>Start Your Consultation!</h1>
+                <h1>Start hiring best Talent from World!</h1>
                 <ul class="check-list">
                     <li>We build a comprehensive solution strategy</li>
                     <li>We plan, staff, deliver, and manage technology projects and programs across several technical domains</li>
@@ -29,15 +30,25 @@
         </div>
         <div class="right col-md-6">
             <img src="img/logo-loading.png" alt="Logo" class="logo">
-            <h2 class="font-medium text-3xl">Get Expert Consultation for Your Next Move!</h2>
-            <p>Need guidance? Our experts are here to help. Schedule a consultation and let’s bring your ideas to life!</p>
+            <h2 class="font-medium text-3xl">Let's find your developers</h2>
+            <p>To start hiring resources we need some contact details.</p>
+
+            <div class="image-grid">
+                <img src="img/phpjs.png" class="selectable-image" alt="Image 1">
+                <img src="img/reactjs.png" class="selectable-image" alt="Image 2">
+                <img src="img/angular.jpg" class="selectable-image" alt="Image 3">
+                <img src="img/nextjs.png" class="selectable-image" alt="Image 4">
+            </div>
 
             <form action="/inc/form.php" method="post">
                 <div class="form-step" id="step-1">
                     <div class="form-group">
-                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
-                        <input type="text" id="firstname" name="name">
-                        <small class="error-text" id="name-error"></small>
+                        <label for="frameworks">Select your project stacks</label>
+                        <select id="frameworks" name="frameworks" multiple>
+                            <option value="framework1">Python</option>
+                            <option value="framework2">PHP</option>
+                        </select>
+                        <small class="error-text" id="frameworks-error"></small>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
@@ -49,6 +60,15 @@
                         <input type="tel" id="phone" name="phone">
                         <small class="error-text" id="phone-error"></small>
                     </div>
+                    <div class="form-group">
+                    <label for="type1">Are you an individual or a company?</label>
+                        <select id="type1" name="type1">
+                            <option value="" disabled selected>Select your type</option>
+                            <option value="typeA">Individual</option>
+                            <option value="typeB">Company</option>
+                        </select>
+                        <small class="error-text" id="type1-error"></small>
+                    </div>
                     <div class="form-buttons">
                         <button type="button" id="back-step-1">Cancel</button>
                         <button type="button" id="next-step-1">Next</button>
@@ -57,27 +77,18 @@
 
                 <div class="form-step" id="step-2" style="display: none !important;">
                     <div class="form-group">
-                        <label for="type1">Are you an individual or a company?</label>
-                        <select id="type1" name="type1">
-                            <option value="" disabled selected>Select your type</option>
-                            <option value="typeA">Individual</option>
-                            <option value="typeB">Company</option>
-                        </select>
-                        <small class="error-text" id="type1-error"></small>
+                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
+                        <input type="text" id="firstname" name="name">
+                        <small class="error-text" id="name-error"></small>
                     </div>
                     <div class="form-group">
-                        <label for="type2">What kind of consultation are you looking for?</label>
-                        <select id="type2" name="type2">
+                        <label for="hiretype">Select your hiring type</label>
+                        <select id="hiretype" name="hiretype">
                             <option value="" disabled selected>Select your type</option>
-                            <option value="optionA">Product/Niche related</option>
-                            <option value="optionB">Our services</option>
-                            <option value="optionC">Other</option>
+                            <option value="hiretypeA">Part time</option>
+                            <option value="hiretypeB">Full time</option>
                         </select>
-                        <small class="error-text" id="type2-error"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="additional">Additional information</label>
-                        <textarea id="additional" name="additional" placeholder="Any additional information..." rows="4"></textarea>
+                        <small class="error-text" id="hiretype-error"></small>
                     </div>
                     <div class="form-buttons">
                         <button type="button" id="back-step-2">Back</button>
@@ -85,7 +96,33 @@
                     </div>
                 </div>
 
-                <div id="step-3" class="form-step d-flex flex-column" style="display: none !important;">
+                <div class="form-step" id="step-3" style="display: none">
+                    <div class="form-group">
+                        <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Select your budget type</label>
+                        <select id="budgettype" name="budgettype">
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="budgettype1">Hourly</option>
+                            <option value="budgettype2">Weekly</option>
+                            <option value="budgettype3">Monthly</option>
+                        </select>
+                        <select id="currency" name="currency">
+                            <option value="currencyA" selected>USD</option>
+                            <option value="currencyB">EUR</option>
+                        </select>
+                    </div>
+                    <small class="budgettype-text" id="budgettype-error"></small>
+                    <div class="form-group">
+                        <label for="hireframe">Your Estimated Hireframe</label>
+                        <input type="text" id="hireframe" name="hireframe" placeholder="e.g. 3 months...">
+                        <small class="error-text" id="hireframe-error"></small>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="button" id="back-step-3">Cancel</button>
+                        <button type="button" id="next-step-3">Next</button>
+                    </div>
+                </div>
+
+                <div id="step-4" class="form-step d-flex flex-column" style="display: none !important;">
                     <div class="step3">
                         <div class="form-group">
                             <label class="calendar-label">Select a date</label>
@@ -179,7 +216,7 @@
                         </div>
                     </div>
                     <div class="form-buttons">
-                        <button type="button" id="back-step-3">Back</button>
+                        <button type="button" id="back-step-4">Back</button>
                         <button type="submit" id="submitForm">Submit</button>
                     </div>
                 </div>
@@ -187,8 +224,8 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="/assets/js/consultation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="/assets/js/hire-devs.js"></script>
     <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
 </body>
-
 </html>

@@ -93,7 +93,7 @@ h1 {
 .right {
     background-color: #ffffff;
     padding: 40px;
-    height: 100dvh;
+    min-height: 100dvh;
     width: 100%;
 }
 
@@ -125,6 +125,11 @@ h1 {
     font-size: 1.1rem;
     max-width:43rem;
     word-wrap:break-word;
+}
+
+#step-2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -218,6 +223,22 @@ select option[disabled] {
     display: none;
 }
 
+.estbudget-text{
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none;
+    margin-left: 2rem;
+}
+
+.budgettype-text{
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none;
+    margin-left: 2rem;
+}
+
 .iti__country-list .iti__country {
     color: #000 !important;
 }
@@ -235,7 +256,15 @@ select option[disabled] {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 2rem;  /* Dodaje prostor između kalendara i select polja */
+    gap: 2rem; 
+}
+
+#step-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; 
 }
 
 #calendar-wrapper {
@@ -305,13 +334,372 @@ select option[disabled] {
     max-width: 24.75rem;
 }
 
+#budgettype {
+    max-width: 24.75rem;
+}
+
 #am-pm {
     max-width: 5rem;
+}
+
+.step3{
+    display: flex;
+    flex-direction: row;
+}
+
+.choices {
+    max-width: 30rem;
+    margin-bottom: 0;
+}
+
+.choices__inner {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: black;
+    width: 30rem;
+}
+
+.choices__input {
+    display: none !important;
+}
+
+.choices__list--multiple .choices__item {
+    background-color: #724FFF;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 5px 5px 0 0;
+}
+
+.choices__list {
+    background-color: white;   
+    color: black;            
+}
+  
+.choices__item {
+    background-color: white; 
+    color: black;            
+}
+  
+.choices__item--highlighted {
+    background-color: #f0f0f0; 
+    color: black;              
+}
+
+#estbudget {
+    max-width: 24.7rem;
+}
+
+#currency {
+    max-width: 5rem;
+}
+
+/* Kontejner za slike */
+.image-grid {
+    max-width: 1200px;             /* ograničava ukupnu širinu grid-a */
+    margin-left: 1rem;                /* centriranje na stranici */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    gap: 1rem;                     /* razmak između slika */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Stil za svaku sliku */
+  .selectable-image {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover efekat */
+  .selectable-image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-color: #724FFF;
+  }
+  
+  /* Selektovana slika */
+  .selectable-image.selected {
+    border-color: #724FFF;
+    box-shadow: 0 0 0 4px rgba(155, 77, 202, 0.4);
+  }
+  
+
+@media (max-width: 1280px) {
+    .right p{
+        max-width:35rem;
+        word-wrap:break-word;
+    }
+    .right h2{
+        max-width:33rem;
+        word-wrap:break-word;
+    }
+    .right{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form-step{
+        display: flex;
+        flex-direction: column;
+    }
+    #timezone{
+        max-width: 15rem;
+    }
+    #hour{
+        max-width: 9.7rem;
+    }
+    #budgettype {
+        max-width: 24.7rem;
+    }
+    #hireframe {
+        max-width: 30rem;
+    }
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bigbox {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .container {
+        --bs-gutter-x: 0rem;
+        max-width: 1024px;
+    }
+    .form-step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 1rem;
+    }
+    .form-group{
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form-buttons{
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .left-main{
+        align-items: center;
+        text-align: center;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .form-step {
+        margin-top: 5rem;
+    }
+    .right{
+        height: 100%;
+    }
+    .right .logo{
+        margin-left: 1rem;
+        margin-right: 8rem;
+    }
+    .right h2{
+        margin-left: 1rem;
+        margin-right: 8rem;
+        font-size: 2.1rem;
+    }
+    .right p{
+        margin-left: 1rem;
+        margin-right: 8rem;
+        font-size: 1.3rem;
+    }
+    #timezone{
+        max-width: 26rem;
+    }
+    #hour{
+        max-width: 20.7rem;
+    }
+    .step3select{
+        margin-left: 1rem;
+    }
+    #budgettype {
+        max-width: 22.7rem;
+    }
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .bigbox {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .container {
+        --bs-gutter-x: 0rem;
+        max-width: 768px;
+    }
+    .right .logo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right h2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form-step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-top: 0;
+    }
+    .form-group{
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form-group select{
+        max-width: 30rem;
+    }
+    #step-2 select{
+        max-width: 30rem;
+    }
+    #hour{
+        max-width: 18.7rem;
+    }
+    #timezone{
+        max-width: 24rem;
+    }
+    .form-buttons{
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .step3select{
+        margin-left: 1rem;
+    }
+    .left-main{
+        align-items: center;
+        text-align: center;
+    }
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    #budgettype {
+        max-width: 24.7rem;
+    }
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .form-step{
+        margin-left: 0;
+    }
+    .step3{
+        display: flex;
+        flex-direction: column;
+    }
+    #hour {
+        max-width: 20.7rem;
+    }
+    #timezone {
+        max-width: 26rem;
+    }
+    #calendar-wrapper{
+        margin-left: 1rem;
+    }
+    .calendar-label{
+        margin-left: 1rem;
+    }
+    #timeframe {
+        max-width: 28rem;
+    }
+    #estbudget {
+        max-width: 22rem;
+    }
+    #currency {
+        max-width: 5.6rem;
+    }
+    #step-3 .form-buttons{
+        max-width: 28rem;
+    }
+    #budgettype {
+        max-width: 21.7rem;
+    }
+    #hireframe {
+        max-width: 28rem;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
         --bs-gutter-x: 0rem;
+    }
+    .right{
+        height: 100%;
+    }
+    .right .logo{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .right h2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .right p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .form-step{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 21rem;
+    }
+    .form-group{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form-group input{
+        max-width: 19rem;
+        align-items: center;
+    }
+    .form-group select{
+        max-width: 19rem;
+        align-items: center;
+    }
+    .choices__inner {
+        max-width: 19rem;
+        align-items: center;
+    }
+    .form-group textarea{
+        max-width: 19rem;
+        align-items: center;
+    }
+    .form-buttons{
+        margin-left: 0;
+        margin-right: 0;
+        width: 19rem;
+        align-items: center;
     }
     h1 {
         font-size: 3rem;
@@ -319,5 +707,174 @@ select option[disabled] {
     .bigbox {
         display:flex;
         flex-direction: column-reverse;
+    }
+    .step3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #hour {
+        max-width: 16.7rem;
+    }
+    #estbudget {
+        max-width: 13.7rem;
+    }
+    #timezone{
+        max-width: 22rem;
+    }
+    #step-3{
+        align-items: center;
+    }
+    #step-4{
+        align-items: center;
+    }
+    #step-2 label{
+        max-width:19rem;
+        word-wrap:break-word;
+    }
+    #step-2 select {
+        max-width: 19rem;
+    }
+    .step3select {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #timeframe {
+        max-width: 19rem;
+    }
+    #budgettype {
+        max-width: 13rem;
+    }
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 2.5rem;
+    }
+    .right p{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right h2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .right .logo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #step-4{
+        max-width: 18rem;
+    }
+    #step-3{
+        max-width: 18rem;
+    }
+    #step-2{
+        max-width: 18rem;
+    }
+    #step-1{
+        max-width: 18rem;
+    }
+    .form-group select{
+        max-width: 18rem;
+        align-items: center;
+    }
+    .form-group input{
+        max-width: 18rem;
+        align-items: center;
+    }
+    .form-group textarea{
+        max-width: 19rem;
+        align-items: center;
+    }
+    .form-buttons{
+        margin-left: 0;
+        margin-right: 0;
+        width: 18rem;
+        align-items: center;
+    }
+    #hour{
+        max-width: 14.7rem;
+    }
+    #timezone{
+        max-width: 20rem;
+    }
+    .choices__inner {
+        max-width: 18rem;
+        align-items: center;
+    }
+    #estbudget {
+        max-width: 12.7rem;
+    }
+    #currency {
+        max-width: 5rem;
+    }
+    #timeframe{
+        max-width: 18rem;
+    }
+    #budgettype {
+        max-width: 12.7rem;
+    }
+    #step-2 select {
+        max-width: 18rem;
+    }
+    .image-grid {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .form-step{
+        max-width: 17rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .check-list{
+        margin-top: 5rem;
+    }
+    .left .main{
+        margin-top: 2rem;
+    }
+    #step-2 select {
+        max-width: 18rem;
+    }
+    #step-2 textarea {
+        max-width: 18rem;
+    }
+    #timezone {
+        max-width: 18rem;
+    }
+    #hour {
+        max-width: 12.7rem;
+    }
+    .step3select {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .calendar-label {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #calendar-wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .choices__inner {
+        max-width: 18rem;
+        align-items: center;
+    }
+    #budgettype {
+        max-width: 12.7rem;
     }
 }

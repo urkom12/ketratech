@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const name = document.querySelector("#firstname").value.trim();
             const email = document.querySelector("#email").value.trim();
             const phone = document.querySelector("#phone").value.trim();
+            
             if (!name || name.length < 3) {
                 const err = document.querySelector("#name-error");
                 err.textContent = "Name is required.";
@@ -123,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (isValid) {
                 if (nextStep1Btn) {
                     document.querySelector("#step-1").style.display = "none";
-                    document.querySelector("#step-2").style.display = "block";
+                    document.querySelector("#step-2").style.display = "flex";
                 }
             }
         });
