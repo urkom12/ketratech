@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="/assets/css/booking.css">
 
 <div class="main">   
-    <video autoplay muted loop playsinline preload="auto" disablePictureInPicture>
-    <source src="img/gradient.mp4" type="video/mp4">
-    <source src="img/gradient.webm" type="video/webm">
-    Your browser does not support the video tag.
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablePictureInPicture>
+        <source src="img/gradient.mp4" type="video/mp4">
+        <source src="img/gradient.webm" type="video/webm">
+        Your browser does not support the video tag.
     </video>
 </div>
 <div class="hire-now container text-center text-md-start">

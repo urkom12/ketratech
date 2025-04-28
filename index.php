@@ -17,7 +17,7 @@
 </div>
 
 <div class="main">
-    <video autoplay muted loop playsinline preload="auto" disablePictureInPicture>
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" disablePictureInPicture>
         <source src="img/gradient.mp4" type="video/mp4">
         <source src="img/gradient.webm" type="video/webm">
         Your browser does not support the video tag.
