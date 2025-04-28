@@ -12,68 +12,73 @@ document.addEventListener("DOMContentLoaded", function () {
     const monthYear = document.getElementById("month-year");
     const nextMonthBtn = document.getElementById("next-month");
     const prevMonthBtn = document.getElementById("prev-month");
-
+    
     if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn) {
         let currentDate = new Date();
-
+        let selectedDate = null;
+    
         function renderCalendar(date) {
             const year = date.getFullYear();
             const month = date.getMonth();
             const today = new Date();
-            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate() +1);
-
+            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+    
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
-
+    
             let startDay = firstDay === 0 ? 6 : firstDay - 1;
-
+    
             calendarDates.innerHTML = "";
             monthYear.textContent = date.toLocaleString("default", { month: "long", year: "numeric" });
-
+    
             for (let i = 0; i < startDay; i++) {
                 const emptyDiv = document.createElement("div");
                 calendarDates.appendChild(emptyDiv);
             }
-
+    
             for (let day = 1; day <= daysInMonth; day++) {
                 const dateEl = document.createElement("div");
                 dateEl.classList.add("date");
-
+    
                 const thisDate = new Date(year, month, day);
-
+    
                 if (thisDate < todayMidnight) {
                     dateEl.classList.add("disabled");
                 } else {
                     dateEl.classList.add("enabled");
+                    dateEl.dataset.date = thisDate.toISOString().split("T")[0];
                     dateEl.addEventListener("click", function () {
-                        document.querySelectorAll(".date").forEach(d => d.classList.remove("selected"));
+                        document.querySelectorAll(".date.enabled").forEach(d => d.classList.remove("selected"));
                         this.classList.add("selected");
+                        selectedDate = this.dataset.date;
+                        console.log("Selected date:", selectedDate);
                     });
                 }
 
                 dateEl.textContent = day;
                 calendarDates.appendChild(dateEl);
             }
-
+    
             if (year === today.getFullYear() && month === today.getMonth()) {
                 prevMonthBtn.disabled = true;
             } else {
                 prevMonthBtn.disabled = false;
             }
         }
-
+    
         nextMonthBtn.addEventListener("click", function () {
             currentDate.setMonth(currentDate.getMonth() + 1);
             renderCalendar(currentDate);
         });
-
+    
         prevMonthBtn.addEventListener("click", function () {
             currentDate.setMonth(currentDate.getMonth() - 1);
             renderCalendar(currentDate);
         });
-
+    
         renderCalendar(currentDate);
     }
+    
 
     function clearErrors(scope = document) {
         scope.querySelectorAll('.error-text').forEach(el => {
@@ -84,6 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearErrors();
 
+    const backStep1Btn = document.querySelector("#back-step-1");
+
+    if (backStep1Btn) {
+        backStep1Btn.addEventListener("click", function() {
+            window.location.href = "/hire";
+        });
+    }
     const step1Form = document.querySelector("#step-1");
     const step1Btn = document.querySelector("#next-step-1");
     const nextStep1Btn = document.querySelector("#next-step-1");

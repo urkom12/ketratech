@@ -26,7 +26,7 @@
     <h1 class="mb-4">What's your next big idea?</h1>
     <div class="row justify-content-center align-self-center hire-now-boxes">
         <div class="col-md-4">
-            <a class="hire-now-link" data-id="Schedule a Consultation">
+            <a class="hire-now-link" href="/consultation">
                 <div class="box1">
                     <img src="img/headphones.svg" alt="Headphones">
                     <h4>Consultation Service</h4>
@@ -38,7 +38,7 @@
             </a>
         </div>
         <div class="col-md-4">
-            <a class="hire-now-link" data-id="Hire Developer or Teams">
+            <a class="hire-now-link" href="/hire-devs">
                 <div class="box2">
                     <img src="img/people.svg" alt="People">
                     <h4>Seeking technical professionals or an entire team ?</h4>
@@ -50,7 +50,7 @@
             </a>
         </div>
         <div class="col-md-4">
-            <a class="hire-now-link" data-id="Hire Us">
+            <a class="hire-now-link" href="/project">
                 <div class="box3">
                     <img src="img/building.svg" alt="Building">
                     <h4>Project Management Solution</h4>

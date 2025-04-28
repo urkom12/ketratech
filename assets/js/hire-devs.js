@@ -14,10 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     images.forEach(image => {
         image.addEventListener('click', function() {
           if (this.classList.contains('selected')) {
-            // ако је већ селектована, кликом је унинселектуј
             this.classList.remove('selected');
           } else {
-            // иначе, улажи селекцију (само једна слика истовремено)
             images.forEach(img => img.classList.remove('selected'));
             this.classList.add('selected');
           }
@@ -111,6 +109,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearErrors();
 
+    const backStep1Btn = document.querySelector("#back-step-1");
+
+    if (backStep1Btn) {
+        backStep1Btn.addEventListener("click", function() {
+            window.location.href = "/hire";
+        });
+    }
     const step1Form = document.querySelector("#step-1");
     const step1Btn = document.querySelector("#next-step-1");
     const nextStep1Btn = document.querySelector("#next-step-1");

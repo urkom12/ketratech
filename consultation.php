@@ -106,6 +106,7 @@
                                 </div>
                                 <div id="calendar-dates"></div>
                             </div>
+                            <input type="hidden" id="selected-date" name="selected-date">
                             <small class="error-text" id="calendar-error"></small>
                         </div>
                         <div class="d-flex flex-column step3select">

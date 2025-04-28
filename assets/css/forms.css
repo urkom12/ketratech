@@ -397,18 +397,16 @@ select option[disabled] {
     max-width: 5rem;
 }
 
-/* Kontejner za slike */
 .image-grid {
-    max-width: 1200px;             /* ograničava ukupnu širinu grid-a */
-    margin-left: 1rem;                /* centriranje na stranici */
+    max-width: 1200px;
+    margin-left: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
-    gap: 1rem;                     /* razmak između slika */
+    gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
   }
   
-  /* Stil za svaku sliku */
   .selectable-image {
     width: 5rem;
     height: 5rem;
@@ -419,17 +417,14 @@ select option[disabled] {
     transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  /* Hover efekat */
   .selectable-image:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-color: #724FFF;
   }
   
-  /* Selektovana slika */
   .selectable-image.selected {
     border-color: #724FFF;
-    box-shadow: 0 0 0 4px rgba(155, 77, 202, 0.4);
   }
   
 

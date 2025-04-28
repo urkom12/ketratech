@@ -96,6 +96,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     clearErrors();
 
+    const backStep1Btn = document.querySelector("#back-step-1");
+
+    if (backStep1Btn) {
+        backStep1Btn.addEventListener("click", function() {
+            window.location.href = "/hire";
+        });
+    }
+
     const step1Form = document.querySelector("#step-1");
     const step1Btn = document.querySelector("#next-step-1");
     const nextStep1Btn = document.querySelector("#next-step-1");
