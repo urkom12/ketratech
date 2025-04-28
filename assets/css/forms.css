@@ -407,7 +407,7 @@ select option[disabled] {
     box-sizing: border-box;
   }
   
-  .selectable-image {
+.selectable-image {
     width: 5rem;
     height: 5rem;
     object-fit: cover;
@@ -415,18 +415,21 @@ select option[disabled] {
     border: 4px solid transparent;
     border-radius: 8px;
     transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .selectable-image:hover {
+}
+
+.selectable-image:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-color: #724FFF;
-  }
-  
-  .selectable-image.selected {
+}
+
+.selectable-image.selected {
     border-color: #724FFF;
-  }
-  
+}
+
+.padding-fix {
+    padding: 40px 0 0 40px;
+}
 
 @media (max-width: 1280px) {
     .right p{

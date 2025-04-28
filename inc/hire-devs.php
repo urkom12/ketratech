@@ -41,10 +41,10 @@ try {
     $mail->addReplyTo($email, "$firstName $lastName");
 
     $mail->isHTML(true);
-    $mail->Subject = 'New Booking Submission';
+    $mail->Subject = 'New Hire Devs Submission';
 
     $mail->Body = "
-        <h2>New Booking Submission</h2>
+        <h2>New Hire Devs Submission</h2>
         <p><strong>Name:</strong> {$firstName} {$lastName}</p>
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone:</strong> {$phone}</p>

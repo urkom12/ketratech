@@ -29,11 +29,11 @@
             </div>
         </div>
         <div class="right col-md-6">
-            <img src="img/logo-loading.png" alt="Logo" class="logo">
+            <a href="/"><img src="img/logo-loading.png" alt="Logo" class="logo"></a>
             <h2 class="font-medium text-3xl">Project Building & Management Form</h2>
             <p>To start building your solutions strategy, we need some contact details.</p>
 
-            <form action="/inc/form.php" method="post">
+            <form action="/inc/project.php" method="post">
                 <div class="form-step" id="step-1">
                     <div class="form-group">
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
@@ -71,16 +71,16 @@
                         <label for="status">Select your project status</label>
                         <select id="status" name="status">
                             <option value="" disabled selected>Choose an option</option>
-                            <option value="statusA">Start from scratch</option>
-                            <option value="statusB">Ongoing</option>
+                            <option value="Start from scratch">Start from scratch</option>
+                            <option value="Ongoing">Ongoing</option>
                         </select>
                         <small class="error-text" id="status-error"></small>
                     </div>
                     <div class="form-group">
                         <label for="frameworks">Select your project stacks</label>
                         <select id="frameworks" name="frameworks" multiple>
-                            <option value="framework1">Python</option>
-                            <option value="framework2">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="PHP">PHP</option>
                         </select>
                         <small class="error-text" id="frameworks-error"></small>
                     </div>
@@ -88,9 +88,9 @@
                         <label for="budget">What is your budget type?</label>
                         <select id="budget" name="budget">
                             <option value="" disabled selected>Choose an option</option>
-                            <option value="budgetA">Hourly basis</option>
-                            <option value="budgetB">Monthly basis</option>
-                            <option value="budgetC">Fixed budget</option>
+                            <option value="Hourly basis">Hourly basis</option>
+                            <option value="Monthly basis">Monthly basis</option>
+                            <option value="Fixed budget">Fixed budget</option>
                         </select>
                         <small class="error-text" id="budget-error"></small>
                     </div>
@@ -105,8 +105,8 @@
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Estimated Budget</label>
                         <input type="number" id="estbudget" name="estbudget">
                         <select id="currency" name="currency">
-                            <option value="currencyA" selected>USD</option>
-                            <option value="currencyB">EUR</option>
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
                         </select>
                     </div>
                     <small class="estbudget-text" id="estbudget-error"></small>
@@ -142,6 +142,7 @@
                                 </div>
                                 <div id="calendar-dates"></div>
                             </div>
+                            <input type="hidden" id="selected-date" name="selected-date">
                             <small class="error-text" id="calendar-error"></small>
                         </div>
                         <div class="d-flex flex-column step3select">

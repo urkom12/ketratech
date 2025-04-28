@@ -12,70 +12,73 @@ document.addEventListener("DOMContentLoaded", function () {
     const monthYear = document.getElementById("month-year");
     const nextMonthBtn = document.getElementById("next-month");
     const prevMonthBtn = document.getElementById("prev-month");
-    
-    if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn) {
+    const selectedDateInput = document.getElementById("selected-date");
+
+    if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn && selectedDateInput) {
         let currentDate = new Date();
         let selectedDate = null;
-    
+
         function renderCalendar(date) {
             const year = date.getFullYear();
             const month = date.getMonth();
             const today = new Date();
-            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
-    
+            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
-    
+
             let startDay = firstDay === 0 ? 6 : firstDay - 1;
-    
+
             calendarDates.innerHTML = "";
             monthYear.textContent = date.toLocaleString("default", { month: "long", year: "numeric" });
-    
+
             for (let i = 0; i < startDay; i++) {
                 const emptyDiv = document.createElement("div");
                 calendarDates.appendChild(emptyDiv);
             }
-    
+
             for (let day = 1; day <= daysInMonth; day++) {
                 const dateEl = document.createElement("div");
                 dateEl.classList.add("date");
-    
+
                 const thisDate = new Date(year, month, day);
-    
+                const formattedDate = `${thisDate.getFullYear()}-${String(thisDate.getMonth() + 1).padStart(2, '0')}-${String(thisDate.getDate()).padStart(2, '0')}`;
+
                 if (thisDate < todayMidnight) {
                     dateEl.classList.add("disabled");
                 } else {
                     dateEl.classList.add("enabled");
-                    dateEl.dataset.date = thisDate.toISOString().split("T")[0];
+                    dateEl.dataset.date = formattedDate;
                     dateEl.addEventListener("click", function () {
                         document.querySelectorAll(".date.enabled").forEach(d => d.classList.remove("selected"));
                         this.classList.add("selected");
                         selectedDate = this.dataset.date;
-                        console.log("Selected date:", selectedDate);
+                        selectedDateInput.value = selectedDate;
+                        console.log("Selected date:", selectedDateInput.value);
                     });
                 }
 
                 dateEl.textContent = day;
                 calendarDates.appendChild(dateEl);
             }
-    
+
             if (year === today.getFullYear() && month === today.getMonth()) {
                 prevMonthBtn.disabled = true;
             } else {
                 prevMonthBtn.disabled = false;
             }
         }
-    
+
         nextMonthBtn.addEventListener("click", function () {
             currentDate.setMonth(currentDate.getMonth() + 1);
             renderCalendar(currentDate);
         });
-    
+
         prevMonthBtn.addEventListener("click", function () {
             currentDate.setMonth(currentDate.getMonth() - 1);
             renderCalendar(currentDate);
         });
-    
+
         renderCalendar(currentDate);
     }
     

@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
           if (this.classList.contains('selected')) {
             this.classList.remove('selected');
           } else {
-            images.forEach(img => img.classList.remove('selected'));
             this.classList.add('selected');
           }
         });

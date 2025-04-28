@@ -28,20 +28,19 @@
                 </ul>
             </div>
         </div>
-        <div class="right col-md-6">
-            <img src="img/logo-loading.png" alt="Logo" class="logo">
+        <div class="right col-md-6 padding-fix">
+            <a href="/"><img src="img/logo-loading.png" alt="Logo" class="logo"></a>
             <h2 class="font-medium text-3xl">Let's find your developers</h2>
             <p>To start hiring resources we need some contact details.</p>
 
-            <div class="image-grid">
-                <img src="img/phpjs.png" class="selectable-image" alt="Image 1">
-                <img src="img/reactjs.png" class="selectable-image" alt="Image 2">
-                <img src="img/angular.jpg" class="selectable-image" alt="Image 3">
-                <img src="img/nextjs.png" class="selectable-image" alt="Image 4">
-            </div>
-
-            <form action="/inc/form.php" method="post">
-                <div class="form-step" id="step-1">
+            <form action="/inc/hire-devs.php" method="post">
+                    <div class="form-step" id="step-1">
+                    <div class="image-grid">
+                        <img src="img/phpjs.png" class="selectable-image" alt="Image 1">
+                        <img src="img/reactjs.png" class="selectable-image" alt="Image 2">
+                        <img src="img/angular.jpg" class="selectable-image" alt="Image 3">
+                        <img src="img/nextjs.png" class="selectable-image" alt="Image 4">
+                    </div>
                     <div class="form-group">
                         <label for="frameworks">Select your project stacks</label>
                         <select id="frameworks" name="frameworks" multiple>
@@ -117,7 +116,7 @@
                         <small class="error-text" id="hireframe-error"></small>
                     </div>
                     <div class="form-buttons">
-                        <button type="button" id="back-step-3">Cancel</button>
+                        <button type="button" id="back-step-3">Back</button>
                         <button type="button" id="next-step-3">Next</button>
                     </div>
                 </div>

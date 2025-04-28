@@ -28,11 +28,11 @@
             </div>
         </div>
         <div class="right col-md-6">
-            <img src="img/logo-loading.png" alt="Logo" class="logo">
+            <a href="/"><img src="img/logo-loading.png" alt="Logo" class="logo"></a>
             <h2 class="font-medium text-3xl">Get Expert Consultation for Your Next Move!</h2>
             <p>Need guidance? Our experts are here to help. Schedule a consultation and let’s bring your ideas to life!</p>
 
-            <form action="/inc/form.php" method="post">
+            <form action="/inc/consultation.php" method="post">
                 <div class="form-step" id="step-1">
                     <div class="form-group">
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
@@ -60,8 +60,8 @@
                         <label for="type1">Are you an individual or a company?</label>
                         <select id="type1" name="type1">
                             <option value="" disabled selected>Select your type</option>
-                            <option value="typeA">Individual</option>
-                            <option value="typeB">Company</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Company">Company</option>
                         </select>
                         <small class="error-text" id="type1-error"></small>
                     </div>
@@ -69,9 +69,9 @@
                         <label for="type2">What kind of consultation are you looking for?</label>
                         <select id="type2" name="type2">
                             <option value="" disabled selected>Select your type</option>
-                            <option value="optionA">Product/Niche related</option>
-                            <option value="optionB">Our services</option>
-                            <option value="optionC">Other</option>
+                            <option value="Product/Niche related">Product/Niche related</option>
+                            <option value="Our services">Our services</option>
+                            <option value="Other">Other</option>
                         </select>
                         <small class="error-text" id="type2-error"></small>
                     </div>
