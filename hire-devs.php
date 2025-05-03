@@ -34,18 +34,12 @@
             <p>To start hiring resources we need some contact details.</p>
 
             <form action="/inc/hire-devs.php" method="post">
-                    <div class="form-step" id="step-1">
-                    <div class="image-grid">
-                        <img src="img/phpjs.png" class="selectable-image" alt="Image 1">
-                        <img src="img/reactjs.png" class="selectable-image" alt="Image 2">
-                        <img src="img/angular.jpg" class="selectable-image" alt="Image 3">
-                        <img src="img/nextjs.png" class="selectable-image" alt="Image 4">
-                    </div>
+                <div class="form-step" id="step-1">
                     <div class="form-group">
                         <label for="frameworks">Select your project stacks</label>
-                        <select id="frameworks" name="frameworks" multiple>
-                            <option value="framework1">Python</option>
-                            <option value="framework2">PHP</option>
+                        <select id="frameworks" name="frameworks[]" multiple>
+                            <option value="Python">Python</option>
+                            <option value="PHP">PHP</option>
                         </select>
                         <small class="error-text" id="frameworks-error"></small>
                     </div>
@@ -63,8 +57,8 @@
                     <label for="type1">Are you an individual or a company?</label>
                         <select id="type1" name="type1">
                             <option value="" disabled selected>Select your type</option>
-                            <option value="typeA">Individual</option>
-                            <option value="typeB">Company</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Company">Company</option>
                         </select>
                         <small class="error-text" id="type1-error"></small>
                     </div>
@@ -84,8 +78,8 @@
                         <label for="hiretype">Select your hiring type</label>
                         <select id="hiretype" name="hiretype">
                             <option value="" disabled selected>Select your type</option>
-                            <option value="hiretypeA">Part time</option>
-                            <option value="hiretypeB">Full time</option>
+                            <option value="Part time">Part time</option>
+                            <option value="Full time">Full time</option>
                         </select>
                         <small class="error-text" id="hiretype-error"></small>
                     </div>
@@ -100,13 +94,13 @@
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Select your budget type</label>
                         <select id="budgettype" name="budgettype">
                             <option value="" disabled selected>Choose an option</option>
-                            <option value="budgettype1">Hourly</option>
-                            <option value="budgettype2">Weekly</option>
-                            <option value="budgettype3">Monthly</option>
+                            <option value="Hourly">Hourly</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
                         </select>
                         <select id="currency" name="currency">
-                            <option value="currencyA" selected>USD</option>
-                            <option value="currencyB">EUR</option>
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
                         </select>
                     </div>
                     <small class="budgettype-text" id="budgettype-error"></small>
@@ -142,6 +136,7 @@
                                 </div>
                                 <div id="calendar-dates"></div>
                             </div>
+                            <input type="hidden" id="selected-date" name="selected-date">
                             <small class="error-text" id="calendar-error"></small>
                         </div>
                         <div class="d-flex flex-column step3select">

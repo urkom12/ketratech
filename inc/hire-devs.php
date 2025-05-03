@@ -21,7 +21,6 @@ try {
     $email            = $_POST['email']            ?? '';
     $phone            = $_POST['phone']            ?? '';
     $companyType      = $_POST['type1']            ?? '';
-    $consultationType = $_POST['type2']            ?? '';
     $message          = $_POST['additional']       ?? '';
     
     $selectedDate     = $_POST['selected-date']     ?? '';
@@ -29,6 +28,12 @@ try {
     $amPm             = $_POST['am-pm']             ?? '';
     $selectedTime     = trim($hour . ' ' . $amPm);
     $selectedTimezone = $_POST['timezone']          ?? '';
+    $hiretype         = $_POST['hiretype']          ?? '';
+    $budgettype       = $_POST['budgettype']        ?? '';
+    $currency         = $_POST['currency']          ?? '';
+    $hireframe        = $_POST['hireframe']         ?? '';
+    $frameworks       = $_POST['frameworks']        ?? [];
+    $frameworkList    = implode(', ', $frameworks);
 
     $mail->isSMTP();
     $mail->Host = 'localhost';
@@ -49,11 +54,13 @@ try {
         <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone:</strong> {$phone}</p>
         <p><strong>Company/Type:</strong> {$companyType}</p>
-        <p><strong>Consultation Type:</strong> {$consultationType}</p>
-        <p><strong>Message:</strong> {$message}</p>
         <p><strong>Date:</strong> {$selectedDate}</p>
         <p><strong>Time:</strong> {$selectedTime}</p>
         <p><strong>Timezone:</strong> {$selectedTimezone}</p>
+        <p><strong>Frameworks:</strong> {$frameworkList}</p>
+        <p><strong>Hire Type:</strong> {$hiretype}</p>
+        <p><strong>Budget Type:</strong> {$budgettype} ({$currency})</p>
+        <p><strong>Estimated Hireframe:</strong> {$hireframe}</p>
     ";
 
     $mail->AltBody = "New booking from $firstName $lastName - Email: $email - Phone: $phone";

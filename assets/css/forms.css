@@ -397,16 +397,6 @@ select option[disabled] {
     max-width: 5rem;
 }
 
-.image-grid {
-    max-width: 1200px;
-    margin-left: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
 .selectable-image {
     width: 5rem;
     height: 5rem;
@@ -460,9 +450,6 @@ select option[disabled] {
     }
     #hireframe {
         max-width: 30rem;
-    }
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
@@ -532,9 +519,6 @@ select option[disabled] {
     #budgettype {
         max-width: 22.7rem;
     }
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr) !important;
-    }
 }
 
 @media (max-width: 768px) {
@@ -601,9 +585,6 @@ select option[disabled] {
     }
     #budgettype {
         max-width: 24.7rem;
-    }
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
@@ -743,9 +724,6 @@ select option[disabled] {
     #budgettype {
         max-width: 13rem;
     }
-    .image-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-    }
 }
 
 @media (max-width: 390px) {
@@ -822,12 +800,6 @@ select option[disabled] {
     }
     #step-2 select {
         max-width: 18rem;
-    }
-    .image-grid {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0;
-        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 

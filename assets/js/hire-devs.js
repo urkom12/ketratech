@@ -36,15 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const monthYear = document.getElementById("month-year");
     const nextMonthBtn = document.getElementById("next-month");
     const prevMonthBtn = document.getElementById("prev-month");
+    const selectedDateInput = document.getElementById("selected-date");
 
-    if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn) {
+    if (calendarDates && monthYear && nextMonthBtn && prevMonthBtn && selectedDateInput) {
         let currentDate = new Date();
+        let selectedDate = null;
 
         function renderCalendar(date) {
             const year = date.getFullYear();
             const month = date.getMonth();
             const today = new Date();
-            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate() +1);
+            const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
             const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -64,14 +66,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 dateEl.classList.add("date");
 
                 const thisDate = new Date(year, month, day);
+                const formattedDate = `${thisDate.getFullYear()}-${String(thisDate.getMonth() + 1).padStart(2, '0')}-${String(thisDate.getDate()).padStart(2, '0')}`;
 
                 if (thisDate < todayMidnight) {
                     dateEl.classList.add("disabled");
                 } else {
                     dateEl.classList.add("enabled");
+                    dateEl.dataset.date = formattedDate;
                     dateEl.addEventListener("click", function () {
-                        document.querySelectorAll(".date").forEach(d => d.classList.remove("selected"));
+                        document.querySelectorAll(".date.enabled").forEach(d => d.classList.remove("selected"));
                         this.classList.add("selected");
+                        selectedDate = this.dataset.date;
+                        selectedDateInput.value = selectedDate;
+                        console.log("Selected date:", selectedDateInput.value);
                     });
                 }
 
