@@ -9,7 +9,7 @@ session_start();
   <title><?php echo isset($page_title) ? $page_title : 'KetraTech'; ?></title>
   <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.3">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Custom websites tailored to your business goals. Whether you\'re a startup or enterprise — we deliver clean, modern, and scalable solutions.'; ?>">
 </head>

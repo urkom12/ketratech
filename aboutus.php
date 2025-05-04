@@ -119,71 +119,67 @@ include_once('header.php');
   </div>
 </section>
 
-
-
 <section class="team-section">
-<h2>Meet the team</h2>
-<div class="container">
-    <div class="row g-4">
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 1</h3>
-                    <p>Subtitle 1</p>
+    <h2>Meet the team</h2>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <div class="overlay">
+                        <h3>Title 1</h3>
+                        <p>Subtitle 1</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 2</h3>
-                    <p>Subtitle 2</p>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/raketic.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
+                    <div class="overlay">
+                        <h3>Nikola Raketić</h3>
+                        <p>Co-Founder & Chief Operations Officer (COO)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 3</h3>
-                    <p>Subtitle 3</p>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <div class="overlay">
+                        <h3>Title 3</h3>
+                        <p>Subtitle 3</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 4</h3>
-                    <p>Subtitle 4</p>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <div class="overlay">
+                        <h3>Title 4</h3>
+                        <p>Subtitle 4</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 5</h3>
-                    <p>Subtitle 5</p>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <div class="overlay">
+                        <h3>Title 5</h3>
+                        <p>Subtitle 5</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="image-container">
-                <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                <div class="overlay">
-                    <h3>Title 1</h3>
-                    <p>Subtitle 1</p>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <div class="overlay">
+                        <h3>Title 1</h3>
+                        <p>Subtitle 1</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
-
-
 
 <section class="centered-section">
     <h1>Behind every great project is <br><span>a truly dedicated team</span></h1>

@@ -96,7 +96,7 @@ include_once('header.php');
         <div class="row justify-content-center">
             <div class="col-md-11">
                 <div class="testimonial-item">
-                    <img src="img/testimonial_img1.avif" alt="testimonial">
+                    <img src="img/man.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;">
                     <div>
                         <p>
                         "Being part of KetraTech has been a transformative experience. The collaborative atmosphere, challenging projects, and room for growth make every day exciting and fulfilling. It's inspiring to work in a place where innovation and teamwork are truly valued."            </p>
@@ -109,7 +109,7 @@ include_once('header.php');
         <div class="row justify-content-center">
             <div class="col-md-11">
                 <div class="testimonial-item reverse">
-                    <img src="img/testimonial_img2.avif" alt="testimonial">
+                    <img src="img/woman.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;">
                     <div>
                         <p>
                         "KetraTech is not just a workplace; it's a community of passionate individuals striving for excellence. The opportunities to innovate, collaborate, and grow are unparalleled. I'm proud to be part of a team that continuously pushes boundaries and delivers exceptional results."            </p>

@@ -695,6 +695,7 @@ h2{
   width: auto;
   height: auto;
   pointer-events: none;
+  aspect-ratio: 1 / 1;
 }
 
 .image-container img {
