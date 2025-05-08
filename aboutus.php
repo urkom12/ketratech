@@ -125,15 +125,6 @@ include_once('header.php');
         <div class="row g-4">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
-                    <div class="overlay">
-                        <h3>Title 1</h3>
-                        <p>Subtitle 1</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="image-container">
                     <img src="img/raketic.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
                     <div class="overlay">
                         <h3>Nikola Raketić</h3>
@@ -174,6 +165,15 @@ include_once('header.php');
                     <div class="overlay">
                         <h3>Aleksa Urkom</h3>
                         <p>Full-Stack Developer & DevOps Specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="image-container">
+                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
+                    <div class="overlay">
+                        <h3>Title 1</h3>
+                        <p>Subtitle 1</p>
                     </div>
                 </div>
             </div>
