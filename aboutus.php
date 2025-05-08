@@ -145,35 +145,35 @@ include_once('header.php');
                 <div class="image-container">
                     <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
                     <div class="overlay">
-                        <h3>Title 3</h3>
-                        <p>Subtitle 3</p>
+                        <h3>Igor Ignjatović</h3>
+                        <p>Lead Designer & UX/UI Specialist</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/vojinovic.jpg" alt="Team Member" class="img-fluid shadow">
                     <div class="overlay">
-                        <h3>Title 4</h3>
-                        <p>Subtitle 4</p>
+                        <h3>Petar Vojinović</h3>
+                        <p>Marketing Specialist & Brand Strategist</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/simonovic.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
                     <div class="overlay">
-                        <h3>Title 5</h3>
-                        <p>Subtitle 5</p>
+                        <h3>Mihailo Simonović</h3>
+                        <p>Full-Stack Developer & Backend Specialist</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/urkom.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
                     <div class="overlay">
-                        <h3>Title 1</h3>
-                        <p>Subtitle 1</p>
+                        <h3>Aleksa Urkom</h3>
+                        <p>Full-Stack Developer & DevOps Specialist</p>
                     </div>
                 </div>
             </div>
