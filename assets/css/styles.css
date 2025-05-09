@@ -1358,6 +1358,10 @@ input[type="email"]:focus {
   margin-bottom: 20px;
 }
 
+.footerp {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 767px) {
   .footer-section .row {
     flex-direction: column;

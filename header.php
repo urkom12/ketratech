@@ -8,13 +8,13 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo isset($page_title) ? $page_title : 'KetraTech'; ?></title>
   <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css?v=5.15.4">
   <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.3">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Custom websites tailored to your business goals. Whether you\'re a startup or enterprise — we deliver clean, modern, and scalable solutions.'; ?>">
 </head>
 
-<body>
+<body style="background-color:rgb(127, 28, 189);">
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">

@@ -7,7 +7,7 @@
         <hr class="divider">
         <div class="row">
             <div class="col-md-3 mb-4">
-                <h4>LEAVE YOUR MAIL AND STAY UP TO DATE!</h4>
+                <p class="footerp">LEAVE YOUR MAIL AND STAY UP TO DATE!</p>
                 <form id="subscribeForm">
                     <?php
                         if (!isset($_SESSION['csrf_token'])) {
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-md-3 mb-4">
-                <h4>COMPANY</h4>
+                <p class="footerp">COMPANY</p>
                 <br>
                 <ul class="list-unstyled">
                     <li><a href="/aboutus" class="text-muted">About us</a></li>
@@ -46,14 +46,14 @@
                 </ul>
             </div>
             <div class="col-md-3 mb-4">
-                <h4>CASE STUDIES</h4>
+                <p class="footerp">CASE STUDIES</p>
                 <br>
                 <ul class="list-unstyled">
                     <li><a href="#" class="text-muted">Coming Soon</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4">
-                <h4>CONTACT</h4>
+                <p class="footerp">CONTACT</p>
                 <br>
                 <ul class="list-unstyled">
                     <li class="text-muted">+381 65 123456</li>

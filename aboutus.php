@@ -170,7 +170,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
+                    <img src="img/uros2.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
                     <div class="overlay">
                         <h3>Title 1</h3>
                         <p>Subtitle 1</p>
