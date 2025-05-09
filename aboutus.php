@@ -134,7 +134,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/team_img.avif" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/igor.jpg" alt="Team Member" class="img-fluid shadow">
                     <div class="overlay">
                         <h3>Igor Ignjatović</h3>
                         <p>Lead Designer & UX/UI Specialist</p>

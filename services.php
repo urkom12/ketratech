@@ -98,12 +98,8 @@ include_once('header.php');
                 <li>• Post-launch support and maintenance</li>
             </ul>
             <div class="d-flex gap-3">
-                <button class="btn btn-primary w-50 mt-4">
-                <a href="/hire" style="color: white; text-decoration: none;">Schedule</a>
-                </button>
-                <button class="btn btn-outline-light w-50 mt-4">
-                <a href="/aboutus" style="color: white; text-decoration: none;">View our work</a>
-                </button>
+                <a href="/hire" class="btn btn-primary w-50 mt-4">Schedule</a>
+                <a href="/aboutus" class="btn btn-outline-light w-50 mt-4 custom-outline-link">View our work</a>
             </div>
             </div>
         </div>

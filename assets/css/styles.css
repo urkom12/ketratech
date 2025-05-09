@@ -587,6 +587,20 @@ h2{
 
 .pricing-card .btn-primary:hover {
   background-color: #5a29e6;
+  color: white;
+}
+
+.custom-outline-link {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.custom-outline-link:hover {
+  color: #6a33ff !important;
 }
 
 @media (min-width: 992px) {
