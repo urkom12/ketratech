@@ -108,60 +108,6 @@ include_once('header.php');
     </div>
 </section>
 
-
-<section class="pricing-section py-5">
-    <div class="container">
-        <h1>AI Packages</h1>
-        <div class="row justify-content-center">
-
-        <div class="col-12 col-md-6 col-lg-5 custom-col-lg-5 mb-4">
-            <div class="card text-white p-4 h-100 pricing-card">
-            <h3 class="card-title">Standard</h3>
-            <hr class="divider">
-            <p>Perfect for small businesses starting their digital journey.</p>
-            <p style="color: #A89CFD;">Price per plan</p>
-            <h4 class="price mt-3">$ 2,500<span class="small">/website</span></h4>
-            <hr class="divider">
-            <p class="mt-4">Package includes:</p>
-            <ul class="list-unstyled">
-                <li>• Custom-designed homepage with up to 5 pages</li>
-                <li>• Fully responsive</li>
-                <li>• Basic SEO setup</li>
-                <li>• Contact form integration</li>
-                <li style="color: transparent;">.</li>
-            </ul>
-            <a href="/hire">
-                <button class="btn btn-primary w-100 mt-4">Schedule</button>
-            </a>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-5 custom-col-lg-5 mb-4">
-            <div class="card text-white p-4 h-100 pricing-card">
-            <h3 class="card-title">Advanced</h3>
-            <hr class="divider">
-            <p>Ideal for growing businesses needing more complex designs.</p>
-            <p style="color: #A89CFD;">Price per plan</p>
-            <h4 class="price mt-3">$ 3,500<span class="small">/website</span></h4>
-            <hr class="divider">
-            <p class="mt-4">Package includes:</p>
-            <ul class="list-unstyled">
-                <li>• Standard package +</li>
-                <li>• Up to 10 pages</li>
-                <li>• Enhanced SEO optimization</li>
-                <li>• Blog integration</li>
-                <li>• Basic e-commerce functionality</li>
-            </ul>
-            <a href="/hire">
-                <button class="btn btn-primary w-100 mt-4">Schedule</button>
-            </a>
-            </div>
-        </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="strategy-section text-center">
     <div class="container py-5">
 
