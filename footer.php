@@ -69,7 +69,6 @@
             </div>
             <div class="d-flex align-items-center padding-right1">
                 <a href="https://www.facebook.com/" class="mx-2" target="_blank"><img src="img/face.svg" alt="Facebook" style="width: 45px;"></a>
-                <a href="https://x.com/KetraTech" class="mx-2" target="_blank"><img src="img/x.svg" alt="X" style="width: 45px;"></a>
                 <a href="https://www.instagram.com/ketra.tech/" class="mx-2" target="_blank"><img src="img/insta.svg" alt="Instagram" style="width: 45px;"></a>
                 <a href="https://www.tiktok.com/@ketratech" class="mx-2" target="_blank"><img src="img/tiktok.svg" alt="TikTok" style="width: 45px;"></a>
             </div>

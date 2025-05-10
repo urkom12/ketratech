@@ -10,6 +10,7 @@ session_start();
   <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.6">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="canonical" href="https://ketratech.net"/>
   <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Custom websites tailored to your business goals. Whether you\'re a startup or enterprise — we deliver clean, modern, and scalable solutions.'; ?>">
 </head>
 
