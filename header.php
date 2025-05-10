@@ -13,7 +13,7 @@ session_start();
   <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'Custom websites tailored to your business goals. Whether you\'re a startup or enterprise — we deliver clean, modern, and scalable solutions.'; ?>">
 </head>
 
-<body style="background-color: transparent;">
+<body style="background-color: #6c5ce7;">
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
