@@ -85,7 +85,7 @@ include_once('header.php');
                     <div class="col-md-8">
 
                         <form id="contactForm" class="needs-validation" action="" method="POST" novalidate>
-                            <div class="row" style="justify-content: space-between;">
+                            <div class="row bs-gutter-0" style="justify-content: space-between;">
                                 <div class="form-border col-md-6 mb-3">
                                     <label for="firstName" class="form-label">First Name</label>
                                     <input type="text" class="form-control" id="firstName" name="firstName" required>
@@ -302,7 +302,7 @@ include_once('header.php');
 
         <div class="col-lg-6 col-md-12 info">
         <h5>Address:</h5>
-        <h3>Žarka Zrenjanina N/A</h3>
+        <h3>Žarka Zrenjanina 38a</h3>
 
         <h5>City:</h5>
         <h3>Pančevo</h3>
@@ -311,9 +311,9 @@ include_once('header.php');
         <h3>26000</h3>
 
         <h5>Email:</h5>
-        <h3>ketratech@info.com</h3>
+        <h3>contact@ketratech.net</h3>
         <h5>Phone:</h5>
-        <h3>+381 13 123456</h3>
+        <h3>+381 60 3345087</h3>
         </div>
     </div>
 </div>

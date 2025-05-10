@@ -28,20 +28,6 @@ include_once('header.php');
     </video>
 </div>
 
-<section class="team-section-about">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <img src="img/aboutus_img.avif" alt="Team" class="img-fluid shadow">
-            </div>
-            <div class="animation-div col-md-10">
-                <h1>The team dedicated to your success</h1>
-                <p>Our passionate and skilled team is here to bring your vision to life. With expertise in web development, design, and strategy, we ensure your business achieves its full potential. Let us guide you to success with solutions crafted for your unique needs.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="custom-section">
     <div class="container">
         <h1>Why us?</h1>
@@ -69,7 +55,7 @@ include_once('header.php');
 
 <section class="ux-section py-5 text-center text-lg-start">
     <div class="container">
-        <h2 class="text-primary mb-4" style="text-align: center;">What are our core values?<br><span style="color: #A89CFD;">Why us?</span></h2>
+        <h2 class="text-primary" style="text-align: center; margin-bottom: 3rem !important;">What are our core values?</h2>
         <div class="row justify-content-center">
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
@@ -125,7 +111,7 @@ include_once('header.php');
         <div class="row g-4">
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/raketic.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
+                    <img src="img/raketic.jpg" draggable="false" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
                     <div class="overlay">
                         <h3>Nikola Raketić</h3>
                         <p>Co-Founder & Chief Operations Officer (COO)</p>
@@ -134,7 +120,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/igor.jpg" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/igor.jpg" draggable="false" alt="Team Member" class="img-fluid shadow">
                     <div class="overlay">
                         <h3>Igor Ignjatović</h3>
                         <p>Lead Designer & UX/UI Specialist</p>
@@ -143,7 +129,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/vojinovic.jpg" alt="Team Member" class="img-fluid shadow">
+                    <img src="img/vojinovic.jpg" draggable="false" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
                     <div class="overlay">
                         <h3>Petar Vojinović</h3>
                         <p>Marketing Specialist & Brand Strategist</p>
@@ -152,7 +138,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/simonovic.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
+                    <img src="img/simonovic.jpg" draggable="false" alt="Team Member" class="img-fluid shadow" style="object-position: top;">
                     <div class="overlay">
                         <h3>Mihailo Simonović</h3>
                         <p>Full-Stack Developer & Backend Specialist</p>
@@ -161,7 +147,7 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/urkom.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
+                    <img src="img/urkom.jpg" draggable="false" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
                     <div class="overlay">
                         <h3>Aleksa Urkom</h3>
                         <p>Full-Stack Developer & DevOps Specialist</p>
@@ -170,10 +156,10 @@ include_once('header.php');
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="image-container">
-                    <img src="img/uros2.jpg" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
+                    <img src="img/uros2.jpg" draggable="false" alt="Team Member" class="img-fluid shadow" style="object-position: center;">
                     <div class="overlay">
-                        <h3>Title 1</h3>
-                        <p>Subtitle 1</p>
+                        <h3>Uroš Stojanović</h3>
+                        <p>Frontend Developer</p>
                     </div>
                 </div>
             </div>

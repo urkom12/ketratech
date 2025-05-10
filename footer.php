@@ -38,7 +38,7 @@
             <div class="col-md-3 mb-4">
                 <p class="footerp">COMPANY</p>
                 <br>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-list">
                     <li><a href="/aboutus" class="text-muted">About us</a></li>
                     <li><a href="/contact" class="text-muted">Clients</a></li>
                     <li><a href="/services" class="text-muted">Pricing</a></li>
@@ -48,17 +48,17 @@
             <div class="col-md-3 mb-4">
                 <p class="footerp">CASE STUDIES</p>
                 <br>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled footer-list">
                     <li><a href="#" class="text-muted">Coming Soon</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4">
                 <p class="footerp">CONTACT</p>
                 <br>
-                <ul class="list-unstyled">
-                    <li class="text-muted">+381 65 123456</li>
-                    <li class="text-muted"><a href="mailto:support@ketratech.com" target="_blank" style="font-weight: 400; text-decoration: none; font-size: 17px; text-transform: unset;">support@ketratech.com</a></li>
-                    <li class="text-muted">Ulica 3 - 26000 Pančevo, Serbia</li>
+                <ul class="list-unstyled footer-list">
+                    <li class="text-muted">+381 60 3345087</li>
+                    <li class="text-muted"><a href="mailto:support@ketratech.com" target="_blank" style="font-weight: 400; text-decoration: none; font-size: 17px; text-transform: unset;">contact@ketratech.com</a></li>
+                    <li class="text-muted">Žarka Zrenjanina 38a - 26000 Pančevo, Serbia</li>
                 </ul>
             </div>
         </div>

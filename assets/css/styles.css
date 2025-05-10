@@ -61,7 +61,7 @@ body {
 .hero-content h1 {
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: bold;
-  color: #a29bfe;
+  color: #6c5ce7;
 }
 
 .hero-content h1 span{
@@ -627,11 +627,13 @@ h2{
   font-size: 4.563rem;
   margin-top: 20px;
   color: #A89CFD;
+  text-align: center;
 }
 
 .team-section-about p {
   color: #FFFFFF;
   font-size: 1.375rem;
+  margin-top:2rem;
 }
 
 .team-section-about img {
@@ -641,10 +643,11 @@ h2{
 
 .custom-section {
   padding: 60px 20px;
+  margin-top:4rem;
 }
 
 .custom-section h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-bottom: 3rem;
   color: #A89CFD;
 }
@@ -703,6 +706,7 @@ h2{
 .image-container {
   position: relative;
   border-radius: 50%;
+  border: 2px solid #A89CFD;
   overflow: hidden;
   margin: 20px auto;
   background: transparent;
@@ -815,7 +819,7 @@ h2{
 }
 
 .form-section p{
-  font-size: 1.375rem;
+  font-size: 1.29rem;
   font-weight: 500;
   line-height: 1.625rem;
 }
@@ -1375,6 +1379,9 @@ input[type="email"]:focus {
 .footerp {
   font-size: 1.5rem;
 }
+.footer-list a{
+  font-weight: 400;
+}
 
 @media (max-width: 767px) {
   .footer-section .row {
@@ -1432,4 +1439,7 @@ input[type="email"]:focus {
   .divider-margin{
     margin-bottom: 2rem !important;
   }
+}
+.bs-gutter-0 {
+  --bs-gutter-x: 0rem !important;
 }

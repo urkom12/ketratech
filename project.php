@@ -79,8 +79,14 @@
                     <div class="form-group">
                         <label for="frameworks">Select your project stacks</label>
                         <select id="frameworks" name="frameworks" multiple>
-                            <option value="Python">Python</option>
+                            <option value="WP">WordPress</option>
                             <option value="PHP">PHP</option>
+                            <option value="JS">JavaScript</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Angular">Angular</option>
+                            <option value="Vue">Vue.js</option>
+                            <option value="Laravel">Laravel</option>
                         </select>
                         <small class="error-text" id="frameworks-error"></small>
                     </div>

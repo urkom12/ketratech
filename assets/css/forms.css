@@ -376,7 +376,8 @@ select option[disabled] {
 
 .choices__list {
     background-color: white;   
-    color: black;            
+    color: black; 
+    z-index: 2 !important;           
 }
   
 .choices__item {
