@@ -1,3 +1,8 @@
+function sanitizeText(text) {
+  const element = document.createElement('div');
+  element.textContent = text;
+  return element.innerHTML;
+}
 (() => {
     'use strict';
   
@@ -35,7 +40,7 @@
     const randomChars = "!@#$%^&*()_+-<>?";
   
     aTags.forEach((element) => {
-      const originalText = element.dataset.text;
+      const originalText = sanitizeText(element.dataset.text);
   
       if (!originalText) {
         console.warn("Missing data-text attribute on:", element);
@@ -44,7 +49,6 @@
   
       element.addEventListener("mouseover", () => {
         let iteration = 0;
-  
         const interval = setInterval(() => {
           element.textContent = originalText
             .split("")
@@ -53,7 +57,6 @@
               return randomChars.charAt(Math.floor(Math.random() * randomChars.length));
             })
             .join("");
-  
           if (iteration >= originalText.length) clearInterval(interval);
           iteration++;
         }, 100);
@@ -67,12 +70,13 @@
       loader?.classList.remove('loader--active');
     });
   
-    navLink?.addEventListener('click', () => {
-      loader?.classList.add('loader--active');
-  
-      setTimeout(() => {
-        loader?.classList.remove('loader--active');
-      }, 5000);
+    navLink?.addEventListener('click', (event) => {
+    if (event.target.matches('.nav-link')) {
+        loader?.classList.add('loader--active');
+        setTimeout(() => {
+          loader?.classList.remove('loader--active');
+        }, 5000);
+      }
     });
   })();
   

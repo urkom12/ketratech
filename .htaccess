@@ -9,3 +9,4 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^/.]+)$ $1.php [L]
 
 ErrorDocument 404 /404.php
+Header always set X-Frame-Options "DENY"

@@ -60,6 +60,7 @@
                     <div class="form-group">
                         <label for="title">Your Project Title</label>
                         <input type="title" id="title" name="title">
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                         <small class="error-text" id="title-error"></small>
                     </div>
                     <div class="form-group">

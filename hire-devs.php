@@ -52,6 +52,7 @@
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
+                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                         <small class="error-text" id="email-error"></small>
                     </div>
                     <div class="form-group">
