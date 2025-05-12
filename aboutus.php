@@ -1,6 +1,7 @@
 <?php 
 $page_title = "KetraTech | About Us";
 $meta_description = "Meet the minds behind KetraTech. Discover our mission, values, and the passion that drives our digital creations.";
+$page_canonical = "https://www.ketratech.com/aboutus";
 include_once('header.php'); 
 ?>
 
@@ -38,12 +39,12 @@ include_once('header.php');
                 <a href="/" class="btn btn-custom mt-3">See our work</a>
             </div>
             <div class="col-lg-6">
-                <img src="img/slika_aboutus1.avif" alt="img/slika_aboutus1.png" class="custom-image">
+                <img src="img/slika_aboutus1.webp" alt="People" class="custom-image">
             </div>
         </div>
         <div class="row g-4">
             <div class="col-lg-6">
-                <img src="img/slika_aboutus2.avif" alt="img/slika_aboutus2.png" class="custom-image">
+                <img src="img/slika_aboutus2.avif" alt="People" class="custom-image">
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <h2>Every project is unique, and we ensure that our solutions are crafted to meet your specific goals.</h2>
@@ -170,7 +171,7 @@ include_once('header.php');
 <section class="centered-section">
     <h1>Behind every great project is <br><span>a truly dedicated team</span></h1>
     <p>At Ketra Tech, our experts combine creativity, technical - <br>expertise, and a passion to deliver succsessful solutions.</p>
-    <a href="/"><button class="btn btn-schedule">See our work</button></a>
+    <a class="btn btn-schedule" href="/">See our work</a>
 </section>
 
 <?php include_once('footer.php'); ?>

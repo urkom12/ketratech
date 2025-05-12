@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+<?php include "header.php"; 
+$page_canonical = "https://www.ketratech.com/";
+?>
 
 <div class="loader loader--active">
     <div class="loader__icon">
@@ -94,7 +96,7 @@
             <img src="img/slika_krug6.avif" alt="Team Member 6" class="rounded-circle img-fluid box">
             </div>
         </div>
-        <a href="/hire"><button class="btn ketra_btn line-show">Hire Now</button></a>
+        <a href="/hire" class="btn ketra_btn line-show">Hire Now</a>
     </div>  
 </section>
   
@@ -102,7 +104,7 @@
 <section class="strategy-section text-center">
 <div class="container py-5">
     <h2 class="mb-4">We have designed a strategy to completely elevate your UX</h2>
-    <a href="/aboutus"><button class="btn btn-primary mb-5">See our results</button></a>
+    <a class="btn btn-primary mb-5" href="/aboutus">See our results</a>
 
     <div class="row strategy-box align-items-center">
     <div class="col-md-8 col-12 mb-4 mb-md-0">

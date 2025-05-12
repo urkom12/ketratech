@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/forms.css">
+  <link rel="canonical" href="https://www.ketratech.com/hire-devs"/>
 </head>
 <body>
     <div class="videol">
@@ -52,7 +53,7 @@
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
-                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="text" name="website" style="display:none" tabindex="-1">
                         <small class="error-text" id="email-error"></small>
                     </div>
                     <div class="form-group">

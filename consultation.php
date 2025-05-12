@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"/>
   <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/forms.css">
+  <link rel="canonical" href="https://www.ketratech.com/consultation"/>
 </head>
 <body>
     <div class="videol">
@@ -37,7 +38,7 @@
                     <div class="form-group">
                         <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70" for=":r39:-form-item">Your Full name</label>
                         <input type="text" id="firstname" name="name">
-                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="text" name="website" style="display:none" tabindex="-1">
                         <small class="error-text" id="name-error"></small>
                     </div>
                     <div class="form-group">

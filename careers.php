@@ -1,6 +1,7 @@
 <?php 
 $page_title = "KetraTech | Careers";
 $meta_description = "Join a team of visionaries. Explore open roles and grow your career with KetraTech’s creative and tech-driven culture.";
+$page_canonical = "https://www.ketratech.com/careers";
 include_once('header.php'); 
 ?>
 <div class="loader loader--active">
@@ -34,7 +35,7 @@ include_once('header.php');
             <p class="lead">Explore our culture, and see open positions</p>
         </div>
         <div class="col-lg-6">
-            <img src="img/hero-careers.avif" alt="Professional" class="img-fluid rounded shadow">
+            <img src="img/hero-careers.webp" alt="Professional" class="img-fluid rounded shadow">
         </div>
     </div>
     <br>
@@ -49,8 +50,8 @@ include_once('header.php');
 <br>
 
 <section class="img-career">
-    <img class="visible-img" src="img/slika1-careers.avif" alt="img-career">
-    <img class="unvisible-img" src="img/slika_aboutus1.avif" alt="img/slika_aboutus1.png" class="custom-image">
+    <img class="visible-img" src="img/slika1-careers.avif" alt="img-career" loading="lazy">
+    <img class="unvisible-img" src="img/slika_aboutus1.webp" alt="People" class="custom-image" loading="lazy">
 </section>
 
 <section class="ux-section py-5 text-center text-lg-start">
@@ -60,7 +61,7 @@ include_once('header.php');
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/Priority.png" alt="Icon 1" class="img-fluid">
+                        <img src="img/Priority.png" alt="Icon 1" class="img-fluid" loading="lazy">
                     </div>
                     <h5 class="fw-bold">Prioritizing all of the features can backfire. </h5>
                     <p class="text-muted">Too much information overwhelms users, leading to confusion and a steeper learning curve.</p>
@@ -70,7 +71,7 @@ include_once('header.php');
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/Inconsistent.png" alt="Icon 2" class="img-fluid">
+                        <img src="img/Inconsistent.png" alt="Icon 2" class="img-fluid" loading="lazy">
                     </div>
                     <h5 class="fw-bold">Inconsistent and unpractical design. </h5>
                     <p class="text-muted">Adding elements without a clear strategy disrupts user experience and flow.</p>
@@ -80,7 +81,7 @@ include_once('header.php');
             <div class="box col-lg-4 col-md-6 mb-4">
                 <div class="card bg-transparent border-0 h-100 text-white">
                     <div class="icon mb-3">
-                        <img src="img/UC Design.png" alt="Icon 3" class="img-fluid">
+                        <img src="img/UC Design.png" alt="Icon 3" class="img-fluid" loading="lazy">
                     </div>
                     <h5 class="fw-bold">Design which is not user - centered.</h5>
                     <p class="text-muted">Ignoring the user needs results in decreased engagement, and higher bounce rates</p>
@@ -96,7 +97,7 @@ include_once('header.php');
         <div class="row justify-content-center">
             <div class="col-md-11">
                 <div class="testimonial-item">
-                    <img src="img/man.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;">
+                    <img src="img/man.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;" loading="lazy">
                     <div>
                         <p>
                         "Being part of KetraTech has been a transformative experience. The collaborative atmosphere, challenging projects, and room for growth make every day exciting and fulfilling. It's inspiring to work in a place where innovation and teamwork are truly valued."            </p>
@@ -109,7 +110,7 @@ include_once('header.php');
         <div class="row justify-content-center">
             <div class="col-md-11">
                 <div class="testimonial-item reverse">
-                    <img src="img/woman.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;">
+                    <img src="img/woman.jpg" alt="testimonial" style="aspect-ratio: 1 / 1;" loading="lazy">
                     <div>
                         <p>
                         "KetraTech is not just a workplace; it's a community of passionate individuals striving for excellence. The opportunities to innovate, collaborate, and grow are unparalleled. I'm proud to be part of a team that continuously pushes boundaries and delivers exceptional results."            </p>
@@ -126,7 +127,7 @@ include_once('header.php');
         <h2 class="text-center text-white mb-4" style="color: #A89CFD !important;">Open job positions</h2>
         <div class="accordion" id="faqAccordion">
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="accordion-header" id="headingOne" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">Junior Backend Developer</span>
                         <span class="icon">+</span>
@@ -139,7 +140,7 @@ include_once('header.php');
                 </div>
             </div>
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="accordion-header" id="headingTwo" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">Copywriter</span>
                         <span class="icon">+</span>
@@ -152,7 +153,7 @@ include_once('header.php');
                 </div>
             </div>
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="accordion-header" id="headingThree" role="button"data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">Senior UX Designer</span>
                         <span class="icon">+</span>
@@ -168,7 +169,7 @@ include_once('header.php');
 
         <div class="centered-section">
             <p>If there is a position for you, send us your application!</p>
-            <a href="/hire"><div class="btn ketra_btn line-show">Apply</div</a>
+            <a class="btn ketra_btn line-show" href="/hire">Apply</a>
         </div>
     </div>
 </section>

@@ -1,4 +1,6 @@
-<?php include_once('header.php'); ?>
+<?php include_once('header.php'); 
+$page_canonical = 'https://ketratech.net/cookies';
+?>
 <link rel="stylesheet" href="/assets/css/tos.css">
 <div class="loader loader--active">
     <div class="loader__icon">

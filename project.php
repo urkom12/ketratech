@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/forms.css">
+  <link rel="canonical" href="https://www.ketratech.com/project"/>
+
 </head>
 <body>
     <div class="videol">
@@ -60,7 +62,7 @@
                     <div class="form-group">
                         <label for="title">Your Project Title</label>
                         <input type="title" id="title" name="title">
-                        <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="text" name="website" style="display:none" tabindex="-1">
                         <small class="error-text" id="title-error"></small>
                     </div>
                     <div class="form-group">

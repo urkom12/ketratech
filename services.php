@@ -1,6 +1,7 @@
 <?php 
 $page_title = "KetraTech | Services";
 $meta_description = "Explore our web and app development services tailored to your business. Innovative, scalable, and built to impress.";
+$page_canonical = "https://www.ketratech.com/services";
 include_once('header.php'); 
 ?>
 <div class="loader loader--active">
@@ -54,9 +55,7 @@ include_once('header.php');
                 <li>• Contact form integration</li>
                 <li style="color: transparent;">.</li>
             </ul>
-            <a href="/hire">
-                <button class="btn btn-primary w-100 mt-4">Schedule</button>
-            </a>
+            <a class="btn btn-primary w-100 mt-4" href="/hire">Schedule</a>
             </div>
         </div>
 
@@ -76,9 +75,7 @@ include_once('header.php');
                 <li>• Blog integration</li>
                 <li>• Basic e-commerce functionality</li>
             </ul>
-            <a href="/hire">
-                <button class="btn btn-primary w-100 mt-4">Schedule</button>
-            </a>
+                <a class="btn btn-primary w-100 mt-4" href="/hire">Schedule</a>
             </div>
         </div>
 
@@ -112,9 +109,7 @@ include_once('header.php');
     <div class="container py-5">
 
         <h2 class="mb-4">We have designed a strategy to completely elevate your UX</h2>
-        <a href="/aboutus">
-            <button class="btn btn-primary mb-5">See our results</button>
-        </a>
+        <a class="btn btn-primary mb-5" href="/aboutus">See our results</a>
 
         <div class="row strategy-box align-items-center">
             <div class="col-md-8 col-12 mb-4 mb-md-0">
@@ -169,7 +164,7 @@ include_once('header.php');
         <div class="accordion" id="faqAccordion">
 
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="accordion-header" id="headingOne" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">What is the typical timeline for building a website?</span>
                         <span class="icon">+</span>
@@ -184,7 +179,7 @@ include_once('header.php');
             </div>
 
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="accordion-header" id="headingTwo" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">Can I update the website after it's launched?</span>
                         <span class="icon">+</span>
@@ -198,7 +193,7 @@ include_once('header.php');
             </div>
 
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="accordion-header" id="headingThree" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">Do you offer support after the project is completed?</span>
                         <span class="icon">+</span>
@@ -212,7 +207,7 @@ include_once('header.php');
             </div>
 
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <div class="accordion-header" id="headingFour" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">What platforms do you use to build websites?</span>
                         <span class="icon">+</span>
@@ -227,7 +222,7 @@ include_once('header.php');
             </div>
 
             <div class="box mb-3" style="max-width: 70%;">
-                <div class="accordion-header" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <div class="accordion-header" id="headingFive" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     <div class="d-flex justify-content-between align-items-center clickable">
                         <span class="text-white">How do you ensure the website is mobile-friendly?</span>
                         <span class="icon">+</span>
@@ -239,7 +234,6 @@ include_once('header.php');
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

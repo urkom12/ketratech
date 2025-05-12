@@ -1,8 +1,9 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('/fonts/Raleway-Regular.woff2') format('woff2'); /* Putanja do fonta */
+  src: url('/fonts/Raleway-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal; 
+  font-display: swap;
 }
 html, body {
   min-height: 100%;
@@ -89,8 +90,6 @@ body {
   color: #fff;
 }
 
-
-
 @media (max-width: 768px) {
   .hero-content {
     margin-top: 40vh;
@@ -128,6 +127,8 @@ body {
   font-weight: 500;
   padding: 8px 15px;
   border-radius: 5px;
+  text-transform: none !important;
+  text-decoration: none !important;
 }
 
 .schedule:hover {
@@ -1139,7 +1140,7 @@ ul {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 1rem;
 }
 
 ul li a {
@@ -1154,6 +1155,15 @@ ul li a {
 
 ul li a:hover {
   color: rgb(15, 216, 105);
+}
+@media (max-width: 480px) {
+    ul {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .navbar{
+      padding-bottom: 1rem;
+    }
 }
 
 .loader {

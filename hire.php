@@ -1,4 +1,7 @@
-<?php include_once('header.php'); ?>
+<?php include_once('header.php'); 
+$page_canonical = 'https://ketratech.net/cookies';
+$page_title = 'KetraTech | Hire Us';
+?>
 <link rel="stylesheet" href="/assets/css/hire.css">
 <div class="loader loader--active">
     <div class="loader__icon">
@@ -63,5 +66,4 @@
         </div>
     </div>
 </div>
-<script src="/assets/js/hire.js"></script>
 <?php include_once('footer.php'); ?>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="text-center mb-5 hidden">
             <h2 class="mb-3">Elevate your UX today!<br>Schedule a call and make a difference!</h2>
-            <a href="/hire"><button class="btn btn-primary">Hire Now</button></a>
+            <a class="btn btn-primary" href="/hire">Hire Now</a>
         </div>
         <hr class="divider">
         <div class="row">
