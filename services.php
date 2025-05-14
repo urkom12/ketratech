@@ -45,7 +45,7 @@ include_once('header.php');
             <hr class="divider">
             <p>Perfect for small businesses starting their digital journey.</p>
             <p style="color: #A89CFD;">Price per plan</p>
-            <h4 class="price mt-3">$ 2,500<span class="small">/website</span></h4>
+            <h4 class="price mt-3">Price on request</h4>
             <hr class="divider">
             <p class="mt-4">Package includes:</p>
             <ul class="list-unstyled">
@@ -65,7 +65,7 @@ include_once('header.php');
             <hr class="divider">
             <p>Ideal for growing businesses needing more complex designs.</p>
             <p style="color: #A89CFD;">Price per plan</p>
-            <h4 class="price mt-3">$ 3,500<span class="small">/website</span></h4>
+            <h4 class="price mt-3">Price on request</h4>
             <hr class="divider">
             <p class="mt-4">Package includes:</p>
             <ul class="list-unstyled">

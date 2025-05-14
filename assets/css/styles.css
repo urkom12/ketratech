@@ -1009,7 +1009,7 @@ textarea:focus {
 }
 
 .visible-img{
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .unvisible-img{

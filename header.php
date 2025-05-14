@@ -8,7 +8,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo isset($page_title) ? $page_title : 'KetraTech'; ?></title>
   <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.7">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=1.0.9">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="preload" href="/fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="canonical" href="<?php echo isset($page_canonical) ? $page_canonical : ''; ?>"/>

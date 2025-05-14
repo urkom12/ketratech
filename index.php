@@ -78,22 +78,22 @@ $page_canonical = "https://www.ketratech.com/";
         <p class="mb-4">Let our people do the job and make your perfect design team, which will finish all for you.</p>
         <div class="d-flex justify-content-center align-items-center mb-4">
             <div class="avatar-wrapper">
-            <img src="img/slika_krug1.avif" alt="Team Member 1" class="rounded-circle img-fluid box">
+            <img src="img/raketic.jpg" alt="Team Member 1" draggable="false" class="rounded-circle img-fluid box" style="object-position: top; border: 2px solid #A89CFD;">
             </div>
             <div class="avatar-wrapper">
-            <img src="img/slika_krug2.avif" alt="Team Member 2" class="rounded-circle img-fluid box">
+            <img src="img/igor.jpg" alt="Team Member 2" draggable="false" class="rounded-circle img-fluid box" style="border: 2px solid #A89CFD;">
             </div>
             <div class="avatar-wrapper">
-            <img src="img/slika_krug3.avif" alt="Team Member 3" class="rounded-circle img-fluid box">
+            <img src="img/vojinovic.jpg" alt="Team Member 3" draggable="false" class="rounded-circle img-fluid box" style="object-position: top; border: 2px solid #A89CFD;">
             </div>
             <div class="avatar-wrapper">
-            <img src="img/slika_krug4.avif" alt="Team Member 4" class="rounded-circle img-fluid box">
+            <img src="img/simonovic.jpg" alt="Team Member 4" draggable="false" class="rounded-circle img-fluid box" style="object-position: top; border: 2px solid #A89CFD;">
             </div>
             <div class="avatar-wrapper">
-            <img src="img/slika_krug5.avif" alt="Team Member 5" class="rounded-circle img-fluid box">
+            <img src="img/urkom.jpg" alt="Team Member 5" draggable="false" class="rounded-circle img-fluid box" style="object-position: center; border: 2px solid #A89CFD;">
             </div>
             <div class="avatar-wrapper">
-            <img src="img/slika_krug6.avif" alt="Team Member 6" class="rounded-circle img-fluid box">
+            <img src="img/uros2.jpg" alt="Team Member 6" draggable="false" class="rounded-circle img-fluid box" style="object-position: center; border: 2px solid #A89CFD;">
             </div>
         </div>
         <a href="/hire" class="btn ketra_btn line-show">Hire Now</a>
